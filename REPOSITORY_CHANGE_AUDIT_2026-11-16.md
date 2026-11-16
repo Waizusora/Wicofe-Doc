@@ -69,7 +69,7 @@ Recursive repository-tree inspection identified Cargo manifests in four reposito
 | WDE | 11 | Multi-crate Rust workspace |
 | Mysh | 1 | Standalone Rust package and Cargo.lock |
 
-This is a source-tree discovery snapshot, not a resolved dependency inventory. Wicofe-Tools separately contains Python audit tooling and workflows; Wicofe-Build and other repositories contain build/workflow dependencies even where no Cargo manifest exists. The strict cross-repository auditor also inspects build scripts, GitHub Actions, host package installs, runner images, assets and submodules.
+This is a source-tree discovery snapshot, not a resolved dependency inventory. The cross-repository resolver found 216 external Cargo records in WDE and one in Osynit; Mysh and Wicofe-Kernel produced no external crate records in this snapshot. Wicofe-Tools separately contains Python audit tooling and workflows; Wicofe-Build and other repositories contain build/workflow dependencies even where no Cargo manifest exists. The strict cross-repository auditor also inspects build scripts, GitHub Actions, host package installs, runner images, assets and submodules.
 
 ## 4. Change-specific documentation status
 
