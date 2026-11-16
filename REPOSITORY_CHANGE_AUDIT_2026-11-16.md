@@ -2,7 +2,7 @@
 
 **Scope:** All 29 repositories in `Wicofe-Tools/config/repository_inventory.txt`  
 **Branch inspected:** Default branch (`main` for all 29 repositories)  
-**Snapshot:** 2026-11-16, approximately 13:42 UTC (with later documentation-only follow-ups listed below)  
+**Snapshot:** 2026-11-16, 14:03:46 UTC, from cross-repository audit run 43881861767 (later documentation-only follow-ups listed below)  
 **Method:** Read the latest default-branch commit and recursive Git tree for every repository; inspect manifest/lockfile names and selected changed documentation/source files. This is not a full source-code, full dependency, build, or test audit.
 
 ## 1. Executive summary
@@ -24,33 +24,33 @@ Documentation corrections made during this audit:
 
 ## 2. Current default-branch commit snapshot
 
-The SHA column records the exact commit observed at the snapshot. Later documentation commits made during this audit are reflected for Wicofe-Docs, Wicofe-Specs and Wicofe-Tools where noted.
+The SHA column records the exact commit observed by the 29-repository audit run 43881861767. Subsequent documentation-only commits are listed in §7 and do not change the dependency graph captured by that run.
 
 | Repository | Main HEAD | Latest observed change |
 |---|---|---|
 | Wicofe | `56ccdb80b1fabd5cb4f1286fbe8889d8af29ed53` | Standardize project name as Osynit |
-| Wicofe-Docs | `6ace755b79b94808276626d1cb224de9a7e1afc5` | Record latest 29-repository change audit |
+| Wicofe-Docs | `7dbd536be99baeebe29111ac8fda4a50c79e19e7` | Record latest 29-repository change audit |
 | Wicofe-Specs | `a9e86236617bfc00489eaacaaf507f0506b048d5` | Remove duplicate Osynit contract index entries |
 | Wicofe-Tests | `6210042246ce0d3553dd852df4e0358019085dce` | Standardize project name as Osynit |
-| Wicofe-Tools | `e113ec275cb45278683ac4a3da08fc6561bb59c2` | Fix tooling index and list dependency audit docs |
-| Wicofe-ThirdParty | `d7755a6d9d9e8aa26e68e55aaa3bcd079b297f70` | Document Limine release license inclusion and notices |
-| Wicofe-Kernel | `ff6ec4bb8aa36fdf656fbbfff402eba016493221` | Remove duplicate Osynit documentation index entry |
+| Wicofe-Tools | `fd10793b4fe6e8311cf016042e67fe7ec635923e` | Fix tooling index and list dependency audit docs |
+| Wicofe-ThirdParty | `2b2ed2baabe6eb88a549fa056826dc3fc0d2c3c1` | Document Limine release license inclusion and notices |
+| Wicofe-Kernel | `8986aa49192ddc9e03aacb20ebae666022515fa7` | Remove duplicate Osynit documentation index entry |
 | Wicofe-ABI | `cab3cc6fd8c05f27e7862147f30a087a852f94e5` | Standardize project name as Osynit |
 | Wicofe-Drivers | `7c3d05e8dec0cd66c103491d8b04f7e6c3877953` | Index driver subsystem design |
 | Wicofe-Storage | `b42c7f75ff3c1ef93a7af06e7246792c68b73c4e` | Index storage management design |
 | ONWFS | `ae06ce4178dd8cecb7ec47ea5d0f5715dadb0339` | Clarify ordered-data overwrite limitations |
 | Wicofe-Lib | `cda650b19eef95463bf41596ecfa02e512571e77` | Index Rust userspace library architecture |
 | Wicofe-Libc | `0d7314819ec66ca36bd06ff712250a4cb37c3fc4` | Index C runtime porting architecture |
-| Osynit | `95f53171c3606c22ef34292c1b0e5398830242da` | Format supervisor duplicate-event assertion |
+| Osynit | `1b983d09963556b928631f78d411dde000af5809` | Format supervisor duplicate-event assertion |
 | Wicofe-Services | `4121d9b0a1090088df0c4243ad4ff7ed249c9181` | Standardize project name as Osynit |
 | Wicofe-Network | `a003e296eba39356d510f38da3077042da3b9f20` | Index userspace networking architecture |
 | Wicofe-Input | `2e8220baaf3f88a085d6dd5890e2c95b2b3905ab` | Index input subsystem architecture |
 | Wicofe-Graphics | `2e66c3270dc4ea3ea9ed44ef9c8987864ca183a9` | Index graphics architecture draft |
 | Wicofe-Audio | `ce8237a6c94093a378e8ca9388a5a5ce211d0369` | Index audio architecture draft |
-| WDE | `471c66ed8951295d9f8533c0a43c786ffe552074` | Pin CI actions and inventory apt package licenses |
+| WDE | `ee8f12326ebb7054668bab31a5b89432dfffbf8e` | Pin CI actions and inventory apt package licenses |
 | WPM | `184d483bce67c377b8e4fc9581fb0116b5ce954f` | Link package manager documentation index |
 | Mysh | `f84227e3dfb2a0fe8154003b63997d3f32a9652f` | Document concurrent external pipeline execution |
-| Wicofe-Build | `7563cd28f9205cabd334e29716759f22ae756477` | Remove duplicate Osynit documentation index entry |
+| Wicofe-Build | `3d7a9fbd13aa1028eac9c33c776d878a60943896` | Remove duplicate Osynit documentation index entry |
 | Wicofe-Image | `6ebb653f9e555dfb849d860aaf89c79b2da0570b` | Standardize project name as Osynit |
 | Wicofe-Installer | `9d88c64e41baab6c7aacb5d9637f3629facaef70` | Standardize project name as Osynit |
 | Wicofe-Update | `2e9ecfb1ba93d6f6d0175d6fe8bda51ed233397e` | Index installer and update architecture |
