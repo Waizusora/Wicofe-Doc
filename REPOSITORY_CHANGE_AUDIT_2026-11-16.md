@@ -115,13 +115,13 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 
 ## 7. Post-snapshot documentation-only follow-ups
 
-The following documentation changes were made after the main commit survey and strict-audit snapshot. They do not alter dependency resolution inputs; WDE's CI was re-run after its licensing status note and completed successfully.
+The following changes were made after the 14:03:46 UTC repository snapshot. They update documentation/evidence links or CI pin references; they do not change the Cargo dependency graphs captured by run 43881861767.
 
-- Wicofe-Kernel licensing documentation now records the 103-package CI closure, 15 GPL rejects and LGPL/mixed-license inventory: `8986aa49192ddc9e03aacb20ebae666022515fa7`.
-- WDE licensing documentation now records the 32-package CI closure, 13 UNKNOWN package identities and the latest cross-repository evidence: `ee8f12326ebb7054668bab31a5b89432dfffbf8e`.
-- Wicofe-Docs dependency report now reconciles cross-repository source/build findings with separate Kernel and WDE package artifacts: `3754a1bca5d5f62487ca5a6669301023da525602`.
-- Wicofe-ThirdParty review queue now lists exact GPL, LGPL, mixed-license, optional-OR and UNKNOWN package evidence: `2b2ed2baabe6eb88a549fa056826dc3fc0d2c3c1`.
-- Wicofe-ThirdParty AUDIT now links current CI package closure evidence and immutable Bochs 3.1/PyCdlib 1.22.0 source/license snapshots: `46ca5e234c4836797f7bc9134ba6e3199099cbec`.
+- Wicofe-Kernel licensing documentation with the latest package artifact reference: `cfa22f756b8726456ebc64b7131d286d1cda2045`.
+- WDE licensing documentation with the latest cross-repository snapshot and package artifact reference: `0284f943b70a6d0db9ac726b8998de7aff12b514`.
+- Wicofe-Docs dependency audit report refreshed to the latest cross-repository artifact: `bc5f4026259efef76755f8c4343a890b32d64266`.
+- Wicofe-ThirdParty dependency review queue refreshed with package closure, LGPL, mixed-license and UNKNOWN identities: `f5da956cff2fa521ec7fd3aa27d236ac1d46b801`.
+- Wicofe-ThirdParty AUDIT synchronized with latest CI package closure and replacement candidate evidence: `316e9b5b3f324216c2aa305875cf1724715ebfcf`.
 
 ## 8. Next work
 
