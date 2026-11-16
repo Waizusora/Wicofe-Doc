@@ -141,3 +141,19 @@ This audit is documentation-focused. It did not:
 - establish that any planned subsystem is implemented or conformant.
 
 All findings should be interpreted within that scope.
+
+
+## 7. Follow-up implementation — repository documentation validator
+
+After the initial audit, Wicofe-Tools received an initial read-only Markdown validator:
+
+- [Validator source](https://github.com/Waizusora/Wicofe-Tools/blob/main/scripts/validate_repository_docs.py)
+- [Unit tests](https://github.com/Waizusora/Wicofe-Tools/blob/main/tests/test_validate_repository_docs.py)
+- [Usage and limitations](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/REPOSITORY_DOCUMENTATION_VALIDATOR.md)
+- [GitHub Actions workflow](https://github.com/Waizusora/Wicofe-Tools/blob/main/.github/workflows/repository-docs-validator.yml)
+
+The initial tool checks local Markdown links and heading fragments, directory index targets, workspace path escapes, and optional forbidden terms. It is read-only and uses only the Python standard library.
+
+This partially completes follow-up action 4. It does **not** yet check remote HTTP links, compare the central repository inventory with local checkouts, validate repository-map/index completeness, inspect SPDX/dependency metadata, or verify requirement/test ID coverage.
+
+Unit tests and the workflow definition were committed and fetched back for content verification. A successful GitHub Actions run was not confirmed during this session; therefore test status remains **not verified**.
