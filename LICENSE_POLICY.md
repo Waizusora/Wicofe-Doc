@@ -30,3 +30,4 @@ Record upstream identity, exact version/commit and hashes, license evidence, not
 Preserve upstream copyright notices, license texts, attribution, source-distribution obligations and modification notices as required by the applicable license. A dependency inventory is not a substitute for shipping required notices.
 
 This document summarizes engineering policy and is not legal advice. Ambiguous or high-impact licensing cases require qualified review.
+\n\n## Dependency audit implementation status\n\nThe initial Dependency License Auditor is maintained in [Wicofe-Tools](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/DEPENDENCY_LICENSE_AUDITOR.md). It currently resolves Cargo metadata and discovers other manifest ecosystems. This is not a declaration of repository-wide compliance: non-Cargo resolvers, vendored/source assets, build outputs and final image inventories remain subject to audit. Policy 0.2 remains authoritative.\n
