@@ -2,7 +2,7 @@
 
 **Scope:** All 29 repositories in `Wicofe-Tools/config/repository_inventory.txt`  
 **Branch inspected:** Default branch (`main` for all 29 repositories)  
-**Snapshot:** 2026-11-16, approximately 13:39 UTC  
+**Snapshot:** 2026-11-16, approximately 13:42 UTC (with later documentation-only follow-ups listed below)  
 **Method:** Read the latest default-branch commit and recursive Git tree for every repository; inspect manifest/lockfile names and selected changed documentation/source files. This is not a full source-code, full dependency, build, or test audit.
 
 ## 1. Executive summary
@@ -99,7 +99,15 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 - No full build, target matrix, emulator boot, hardware test or final-image SBOM reconciliation was performed by this documentation/commit survey.
 - A successful local dependency-auditor CI run does not imply that the strict cross-repository audit passes.
 
-## 6. Next work
+## 6. Post-snapshot documentation-only follow-ups
+
+The following documentation changes were made after the main commit survey and strict-audit snapshot. They do not alter dependency resolution inputs; WDE's CI was re-run after its licensing status note and completed successfully.
+
+- WDE licensing status note: `c15da9e096822ac25a86235002b978ca8d781a31`.
+- Wicofe-Docs dependency report refresh and review-queue link: `d026f5bd7f7863d1b84c9f5902cd25e080b63d49`.
+- Wicofe-ThirdParty dependency review queue and index link: `8995c332f396e50a60652f973070a5e7668ef332`.
+
+## 7. Next work
 
 1. Re-run strict cross-repository audit against the current 29 default-branch heads after the latest documentation commits.
 2. Replace or explicitly resolve the two prohibited GPL host tools in Wicofe-Kernel without losing ISO generation and boot-validation coverage.
