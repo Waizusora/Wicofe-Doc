@@ -117,10 +117,10 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 
 The following changes were made after the 14:03:46 UTC repository snapshot. They update documentation/evidence links or CI pin references; they do not change the Cargo dependency graphs captured by run 43881861767.
 
-- Wicofe-Kernel licensing documentation with the latest package artifact reference: `cfa22f756b8726456ebc64b7131d286d1cda2045`.
+- Wicofe-Kernel licensing documentation with the latest package artifact reference: `9834a073b3245057882984a76c4576ce941d64ec`.
 - WDE licensing documentation with the latest cross-repository snapshot and package artifact reference: `0284f943b70a6d0db9ac726b8998de7aff12b514`.
-- Wicofe-Docs dependency audit report refreshed to the latest cross-repository artifact: `13bf867674f8868386e086d02d4f3a7663bc4087`.
-- Wicofe-ThirdParty dependency review queue refreshed with package closure, LGPL, mixed-license and UNKNOWN identities: `d8f11dc8300aae5beaca28d0c0d770c2e6fbaa77`.
+- Wicofe-Docs dependency audit report refreshed to the latest cross-repository artifact: `a6f065cde51204bb18db677fb8f687a4fb8a0c5a`.
+- Wicofe-ThirdParty dependency review queue refreshed with package closure, LGPL, mixed-license and UNKNOWN identities: `fcdc85b9dc38ed3d71461413f81460f912ae44eb`.
 - Wicofe-ThirdParty AUDIT synchronized with latest CI package closure and replacement candidate evidence: `7196dcedc43bddd80767b92ed5b9dc23a92a8f78`.
 
 ## 8. Next work
