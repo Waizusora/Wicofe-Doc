@@ -140,6 +140,13 @@ The following documentation changes were made after the 14:12:13 UTC HEAD snapsh
 - Wicofe-Docs dependency audit report refreshed to the latest cross-repository artifact: `266a9a4fd0d431c1fc9be7937146953a928117fd`.
 - Wicofe-ThirdParty dependency review queue refreshed with package closure, LGPL, mixed-license and UNKNOWN identities: `a225478c0b7edf1a5efba681f3f63d1aa3857d0e`.
 - Wicofe-ThirdParty AUDIT synchronized with latest CI package closure and replacement candidate evidence: `7c12e833f24005983457bfa8c13bf8b1fd522c0a`.
+- Wicofe-Docs created the planned Delivery Release / CLI installation direction: `74a9a51b16c323295110c7476bb8ce3ea88820c2`.
+- Wicofe project-level docs: README `a534cdf24b407548adc45665c401a67f973e0075`, roadmap `11b194bbf07043cfddc53d6fa09d126cae22795d`, architecture `af9ccf8de38e9249e438a3263cd97a57331a05de`, documentation index `1eefbdba9093980d32612f3f140af982c385e8e4`.
+- Wicofe-Docs navigation: INDEX `58fea89ab1f0a6287dbbf07d8070a0d34cef1c99`, repository map `c002f5a162e17682027f4aa0a82bf54fd65f03d8`.
+- Wicofe-Installer README/index: `7c76716bd148a11cc33027a322923701f975fe87` / `7e935d0eae12f7c88426a20984dd62e19e791d19`.
+- Wicofe-Update README/index: `f0052e4c19913a72bc427de1c4f207e2b665aeec` / `cac9bef3abe086b55f6098c9c87152e1cd5018c4`.
+- WPM README/index: `d4a242ff8c8d4c887a1edaafec341bbf99ad8e28` / `dc1da5a5d6454a5c14fd30bbb126c6382feb2014`.
+- Wicofe-Image documentation index: `27542dcc6ce9544f001533fdf57e4080a2e5491f`; Wicofe-Build documentation index: `a6e48685467a3b90ec0a27b368566af2225e566a`.
 
 ## 9. Next work
 
