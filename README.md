@@ -37,3 +37,7 @@ Initial repository baseline. Documentation must not imply that planned functiona
 ## License
 
 Original Wicofe documentation is intended to use MPL-2.0 unless a file states otherwise. External material must retain required attribution and license notices.
+
+## Documentation index
+
+Start at [INDEX.md](INDEX.md). It defines the documentation areas and links to canonical project specifications and architecture references.
