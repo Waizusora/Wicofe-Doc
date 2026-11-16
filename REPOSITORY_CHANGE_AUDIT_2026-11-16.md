@@ -2,7 +2,7 @@
 
 **Scope:** All 29 repositories in `Wicofe-Tools/config/repository_inventory.txt`  
 **Branch inspected:** Default branch (`main` for all 29 repositories)  
-**Snapshot:** 2026-11-16, 14:03:46 UTC, from cross-repository audit run 43881861767 (later documentation-only follow-ups listed below)  
+**Snapshot:** 2026-11-16, 14:12:13 UTC, direct default-branch HEAD reads for all 29 repositories (the dependency graph evidence remains the separate run 43881861767)  
 **Method:** Read the latest default-branch commit and recursive Git tree for every repository; inspect manifest/lockfile names and selected changed documentation/source files. This is not a full source-code, full dependency, build, or test audit.
 
 ## 1. Executive summary
@@ -29,12 +29,12 @@ The SHA column records the exact commit observed by the 29-repository audit run 
 | Repository | Main HEAD | Latest observed change |
 |---|---|---|
 | Wicofe | `56ccdb80b1fabd5cb4f1286fbe8889d8af29ed53` | Standardize project name as Osynit |
-| Wicofe-Docs | `7dbd536be99baeebe29111ac8fda4a50c79e19e7` | Record latest 29-repository change audit |
+| Wicofe-Docs | `9400677c0f25c59c8dbc427bff11c5b59a0e83f9` | Refresh final evidence documentation commit references |
 | Wicofe-Specs | `a9e86236617bfc00489eaacaaf507f0506b048d5` | Remove duplicate Osynit contract index entries |
 | Wicofe-Tests | `6210042246ce0d3553dd852df4e0358019085dce` | Standardize project name as Osynit |
-| Wicofe-Tools | `fd10793b4fe6e8311cf016042e67fe7ec635923e` | Fix tooling index and list dependency audit docs |
-| Wicofe-ThirdParty | `2b2ed2baabe6eb88a549fa056826dc3fc0d2c3c1` | Document Limine release license inclusion and notices |
-| Wicofe-Kernel | `8986aa49192ddc9e03aacb20ebae666022515fa7` | Remove duplicate Osynit documentation index entry |
+| Wicofe-Tools | `fd10793b4fe6e8311cf016042e67fe7ec635923e` | Document separate CI package artifact reconciliation gap |
+| Wicofe-ThirdParty | `a225478c0b7edf1a5efba681f3f63d1aa3857d0e` | Refresh Kernel package evidence to latest completed CI artifact |
+| Wicofe-Kernel | `2f529b0d6513d03ec99ddc6a5a3555692e989923` | Clarify historical Kernel CI evidence reference |
 | Wicofe-ABI | `cab3cc6fd8c05f27e7862147f30a087a852f94e5` | Standardize project name as Osynit |
 | Wicofe-Drivers | `7c3d05e8dec0cd66c103491d8b04f7e6c3877953` | Index driver subsystem design |
 | Wicofe-Storage | `b42c7f75ff3c1ef93a7af06e7246792c68b73c4e` | Index storage management design |
@@ -47,7 +47,7 @@ The SHA column records the exact commit observed by the 29-repository audit run 
 | Wicofe-Input | `2e8220baaf3f88a085d6dd5890e2c95b2b3905ab` | Index input subsystem architecture |
 | Wicofe-Graphics | `2e66c3270dc4ea3ea9ed44ef9c8987864ca183a9` | Index graphics architecture draft |
 | Wicofe-Audio | `ce8237a6c94093a378e8ca9388a5a5ce211d0369` | Index audio architecture draft |
-| WDE | `ee8f12326ebb7054668bab31a5b89432dfffbf8e` | Pin CI actions and inventory apt package licenses |
+| WDE | `0284f943b70a6d0db9ac726b8998de7aff12b514` | Align WDE licensing snapshot with latest 29-repository run |
 | WPM | `184d483bce67c377b8e4fc9581fb0116b5ce954f` | Link package manager documentation index |
 | Mysh | `f84227e3dfb2a0fe8154003b63997d3f32a9652f` | Document concurrent external pipeline execution |
 | Wicofe-Build | `3d7a9fbd13aa1028eac9c33c776d878a60943896` | Remove duplicate Osynit documentation index entry |
@@ -91,7 +91,25 @@ WDE's latest CI change pins the Rust toolchain/action sources and inventories in
 
 Wicofe-ThirdParty contains Limine source/license evidence and the current kernel host-tool review. Wicofe-Build contains a reusable strict dependency gate that invokes the Wicofe-Tools cross-repository workflow at an immutable workflow revision and pins the auditor source separately. This does not yet establish a completed end-to-end image publication gate.
 
-## 5. CI evidence checked
+## 5. Additional repository changes confirmed in the 14:12 UTC HEAD review
+
+The default-branch diff review confirms these documentation and implementation-boundary changes since the earlier repository snapshot:
+
+- **Project identity:** Wicofe, Wicofe-ABI, Wicofe-Tests, Wicofe-Services, Wicofe-Image and Wicofe-Installer standardized the project name to **Osynit**. This is a naming correction; it does not establish new init functionality.
+- **Installation and first boot:** Wicofe-Installer now indexes the draft installation/deployment architecture and Osynit first-boot integration. Its design covers target identity, destructive consent, staged deployment, boot setup, interruption handling and first-boot ownership. The README still explicitly says the installation workflow is not implemented.
+- **Image composition:** Wicofe-Image now indexes the draft image architecture and Osynit image integration. Image manifests, artifact intake, filesystem trees, disk/boot layout and validation remain proposed; no official bootable release image is claimed.
+- **Whole-system updates:** Wicofe-Update now indexes the draft whole-system update architecture. It explicitly owns OS release orchestration while WPM owns individual package operations. A/B slots, snapshots and in-place updates remain unselected; atomicity and rollback are not claimed.
+- **Package manager:** WPM added its component documentation index. Its README still treats package format, repository protocol and signature policy as design work. WPM and Wicofe-Update boundaries remain separate.
+- **Build/release gate:** Wicofe-Build pinned the corrected Wicofe-Tools auditor workflow/source revision to `cccc4c197687ce8fd629f9b9d8a7d95d4e89cddc`. Wicofe-Tools documents that Kernel and WDE system-package evidence artifacts are not yet reconciled by the cross-repository release gate; final-image SBOM reconciliation and publication gating remain incomplete.
+- **Low-level and userspace architecture indexes:** Wicofe-Drivers, Wicofe-Storage, Wicofe-Lib, Wicofe-Libc, Wicofe-Network, Wicofe-Input, Wicofe-Graphics, Wicofe-Audio and Wicofe-SDK added links to their respective draft architecture/porting documents. These are design documentation, not evidence of complete subsystem implementations.
+- **Ports governance:** Wicofe-Ports clarified that Wicofe-SDK owns toolchain/sysroot distribution, Wicofe-ThirdParty owns canonical provenance/license approvals, and Wicofe-Ports owns recipes/patches/upstream maintenance. It also separates host build/cross-compile evidence from actual target runtime support.
+- **Filesystem durability:** ONWFS clarified that ordered metadata journaling does not make in-place file-data overwrites atomic; power loss can leave partially updated contents. This limitation must be reflected in any future installer, updater and recovery guarantees.
+- **Shell behavior:** Mysh documented concurrent OS-pipe execution for all-external simple pipelines and buffered fallback for mixed/in-process pipelines. A separate package-manager implementation was removed from Mysh; package management belongs to WPM.
+- **Init and services:** Osynit removed a duplicate CLI index entry; its current CLI reference remains a planned interface, not proof that all commands are implemented.
+
+These findings are reflected in the owning component documentation. The whole-system user-facing install/update and release direction is separately recorded as a plan in [SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md](SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md).
+
+## 6. CI evidence checked
 
 | Repository | Workflow run | Result | Verified scope |
 |---|---|---|---|
@@ -104,7 +122,7 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 | WDE | [43882021012](https://github.com/Waizusora/WDE/actions/runs/43882021012) | SUCCESS | CI with the corrected pinned package-license auditor; [system-package artifact 14231069939](https://github.com/Waizusora/WDE/actions/runs/43882021012/artifacts/14231069939) |
 | Wicofe-Kernel | [43882914312](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882914312) | SUCCESS | x86-64 build, ISO generation/notice check, QEMU boot, AArch64 check; [package artifact 14232478108](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882914312/artifacts/14232478108) |
 
-## 6. Verification boundaries
+## 7. Verification boundaries
 
 - GitHub default-branch commit and tree reads succeeded for all 29 repositories.
 - The dependency audit artifact is a separate point-in-time snapshot. Its recorded repository revisions must not be conflated with the newer commit table above.
@@ -113,9 +131,9 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 - No hardware boot test or final-image SBOM reconciliation was performed in this audit.
 - A successful local dependency-auditor CI run does not imply that the strict cross-repository audit passes.
 
-## 7. Post-snapshot documentation-only follow-ups
+## 8. Documentation follow-ups after the HEAD snapshot
 
-The following changes were made after the 14:03:46 UTC repository snapshot. They update documentation/evidence links or CI pin references; they do not change the Cargo dependency graphs captured by run 43881861767.
+The following documentation changes were made after the 14:12:13 UTC HEAD snapshot. They synchronize product direction and navigation; they do not change source implementation or the dependency graphs captured by run 43881861767.
 
 - Wicofe-Kernel licensing documentation with the latest package artifact reference: `2f529b0d6513d03ec99ddc6a5a3555692e989923`.
 - WDE licensing documentation with the latest cross-repository snapshot and package artifact reference: `0284f943b70a6d0db9ac726b8998de7aff12b514`.
@@ -123,7 +141,7 @@ The following changes were made after the 14:03:46 UTC repository snapshot. They
 - Wicofe-ThirdParty dependency review queue refreshed with package closure, LGPL, mixed-license and UNKNOWN identities: `a225478c0b7edf1a5efba681f3f63d1aa3857d0e`.
 - Wicofe-ThirdParty AUDIT synchronized with latest CI package closure and replacement candidate evidence: `7c12e833f24005983457bfa8c13bf8b1fd522c0a`.
 
-## 8. Next work
+## 9. Next work
 
 1. Re-run strict cross-repository audit against the current 29 default-branch heads after the latest documentation commits.
 2. Replace or explicitly resolve the two prohibited GPL host tools in Wicofe-Kernel without losing ISO generation and boot-validation coverage.
