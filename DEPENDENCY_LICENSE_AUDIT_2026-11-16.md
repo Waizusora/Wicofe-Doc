@@ -113,4 +113,8 @@ Wicofe-Build has a reusable/tag-triggered release dependency gate that invokes t
 6. Reconcile Wicofe-Build outputs and Wicofe-Image final image contents against a complete SBOM and notice bundle.
 7. Require a successful strict audit and final-image reconciliation tied to the exact release commit.
 
+## 9. Detailed review queue
+
+See the [Wicofe-ThirdParty dependency review queue](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/DEPENDENCY_REVIEW_QUEUE_2026-11-16.md) for the two GPL replacement blockers, both LGPL-bearing `r-efi` alternatives, the 26 unique UNKNOWN identities, the empty approved inventory and triage order.
+
 **This report does not certify Wicofe OS as license-compliant.**
