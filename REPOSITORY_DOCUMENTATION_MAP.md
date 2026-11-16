@@ -63,6 +63,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 - [Osynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) — accepted init architecture baseline; implementation remains partial/prototype.
 - [Osynit core architecture contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/OSYNIT_CORE_ARCHITECTURE_CONTRACT_0.1.md) — cross-repository Core Init boundary.
 - [Wicofe-Docs central guide index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md) — user, administrator, developer, contributor, and troubleshooting guides.
+- [System delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned CLI install/update experience and Delivery Release policy direction; not normative implementation evidence.
 
 ## Component documentation indexes
 
