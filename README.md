@@ -40,4 +40,4 @@ Original Wicofe documentation is intended to use MPL-2.0 unless a file states ot
 
 ## Documentation index
 
-Start at [INDEX.md](INDEX.md). It defines the documentation areas and links to canonical project specifications and architecture references.
+Start at [INDEX.md](INDEX.md). The [repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) identifies the documentation owner and canonical index for every Wicofe component.
