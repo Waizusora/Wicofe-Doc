@@ -13,6 +13,7 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 ## Repository documentation ownership
 
 - [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.
+- [OSynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) — canonical init architecture, Core Init boundary, optional modules and service lifecycle.
 - [Cross-repository consistency audit — 2026-11-16](AUDIT_REPORT_2026-11-16.md) — initial review of all 29 Wicofe repository READMEs/indexes, ownership boundaries, lifecycle status, licensing policy alignment, and outstanding actions.\n- [Dependency license audit — 2026-11-16](DEPENDENCY_LICENSE_AUDIT_2026-11-16.md) — actual 29-repository dependency scan, Cargo and GitHub Actions evidence, strict-gate result and remaining compliance work.
 - [Wicofe dependency license policy](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md) — project-wide GPL/AGPL prohibition, conditional LGPL approval, and review requirements for other licenses.
 
