@@ -8,7 +8,7 @@ This document describes project-wide governance. Component-specific technical au
 
 - **Wicofe-ABI:** syscall and userspace ABI definitions and compatibility policy.
 - **Wicofe-Kernel:** kernel architecture and implementation, VFS mechanisms, driver core, and privileged DKM interfaces.
-- **ONWFS / storage component repository:** native filesystem format and implementation, according to the repository map.
+- **ONWFS:** native filesystem on-disk format, filesystem implementation, and format-specific tooling. **Wicofe-Storage** owns system-level storage discovery, partition workflows, mount orchestration, and administrative tools.
 - **Component repositories:** their own implementation, local tests, build instructions, and component-specific documentation.
 - **Wicofe-Specs:** cross-component specifications and specification index; it does not silently override component-owned interfaces.
 - **Wicofe-Tests:** cross-repository conformance and integration tests.
@@ -16,7 +16,7 @@ This document describes project-wide governance. Component-specific technical au
 - **Wicofe-Tools:** shared development and validation tooling.
 - **Wicofe-ThirdParty:** upstream provenance, license records, patches, and dependency maintenance metadata.
 
-The repository map is the authoritative inventory. If this summary conflicts with a component's accepted specification or repository map, raise a governance issue rather than guessing.
+The [repository map](https://github.com/Waizusora/Wicofe/blob/main/docs/REPOSITORY_MAP.md) is the authoritative inventory. If this summary conflicts with a component's accepted specification or repository map, raise a governance issue rather than guessing.
 
 ## Change authority
 
@@ -31,11 +31,10 @@ Use these labels consistently:
 - **Draft:** incomplete working material.
 - **Proposed:** ready for technical review; not binding.
 - **Accepted:** approved design; not proof of implementation.
-- **Implemented:** code exists at a named revision.
 - **Deprecated:** retained temporarily but discouraged.
 - **Superseded:** replaced by a newer decision or specification.
 
-A repository's existence, a README statement, or a successful compile does not prove a feature is implemented or supported.
+Implementation state and verification state must be recorded separately from specification lifecycle. An accepted design does not imply implemented code or passing tests. Use the [Wicofe-Specs traceability policy](https://github.com/Waizusora/Wicofe-Specs/blob/main/governance/SPECIFICATION_TRACEABILITY_POLICY_0.1.md) for the shared model.
 
 ## Review and evidence
 
