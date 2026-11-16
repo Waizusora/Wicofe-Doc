@@ -119,9 +119,9 @@ The following changes were made after the 14:03:46 UTC repository snapshot. They
 
 - Wicofe-Kernel licensing documentation with the latest package artifact reference: `2f529b0d6513d03ec99ddc6a5a3555692e989923`.
 - WDE licensing documentation with the latest cross-repository snapshot and package artifact reference: `0284f943b70a6d0db9ac726b8998de7aff12b514`.
-- Wicofe-Docs dependency audit report refreshed to the latest cross-repository artifact: `1bcb693c7e970ddc20e660738c3d6c40c247ea2f`.
-- Wicofe-ThirdParty dependency review queue refreshed with package closure, LGPL, mixed-license and UNKNOWN identities: `646fee989e86ca574d10417f7c987167ee6d46dd`.
-- Wicofe-ThirdParty AUDIT synchronized with latest CI package closure and replacement candidate evidence: `80cdf49a2a864b9b2ed0534aa857f4c946ac66b7`.
+- Wicofe-Docs dependency audit report refreshed to the latest cross-repository artifact: `266a9a4fd0d431c1fc9be7937146953a928117fd`.
+- Wicofe-ThirdParty dependency review queue refreshed with package closure, LGPL, mixed-license and UNKNOWN identities: `a225478c0b7edf1a5efba681f3f63d1aa3857d0e`.
+- Wicofe-ThirdParty AUDIT synchronized with latest CI package closure and replacement candidate evidence: `7c12e833f24005983457bfa8c13bf8b1fd522c0a`.
 
 ## 8. Next work
 
