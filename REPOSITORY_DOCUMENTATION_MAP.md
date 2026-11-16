@@ -35,7 +35,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 |---|---|
 | [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) | Shared Rust userspace libraries and safe ABI wrappers |
 | [Wicofe-Libc](https://github.com/Waizusora/Wicofe-Libc) | C standard library/runtime port, startup, syscall glue, compatibility |
-| [Osynit](https://github.com/Waizusora/Osynit) | PID 1, init, service definitions, dependency ordering, supervision, shutdown |
+| [Osynit](https://github.com/Waizusora/Osynit) | PID 1, init, service definitions, dependency ordering, supervision, shutdown; canonical [system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) |
 | [Mysh](https://github.com/Waizusora/Mysh) | Independent command-line shell; Wicofe shell integration is a planned target. Package management belongs to WPM |
 | [Wicofe-Services](https://github.com/Waizusora/Wicofe-Services) | Individual system daemons, IPC, privilege model, service lifecycle |
 | [Wicofe-Network](https://github.com/Waizusora/Wicofe-Network) | Userspace networking configuration, services, and diagnostics |
@@ -60,6 +60,8 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 ## Project-level documentation indexes
 
 - [Wicofe project documentation](https://github.com/Waizusora/Wicofe/blob/main/docs/INDEX.md) — whole-system architecture, roadmap, repository map, and project decisions.
+- [Osynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) — accepted init architecture baseline; implementation remains partial/prototype.
+- [Osynit core architecture contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/OSYNIT_CORE_ARCHITECTURE_CONTRACT_0.1.md) — cross-repository Core Init boundary.
 - [Wicofe-Docs central guide index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md) — user, administrator, developer, contributor, and troubleshooting guides.
 
 ## Component documentation indexes
