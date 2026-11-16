@@ -13,6 +13,7 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 ## Repository documentation ownership
 
 - [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.
+- [Cross-repository consistency audit — 2026-11-16](AUDIT_REPORT_2026-11-16.md) — initial review of all 29 Wicofe repository READMEs/indexes, ownership boundaries, lifecycle status, licensing policy alignment, and outstanding actions.
 
 ## Canonical project references
 
