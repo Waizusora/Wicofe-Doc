@@ -14,7 +14,7 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 
 - [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.
 - [Cross-repository consistency audit — 2026-11-16](AUDIT_REPORT_2026-11-16.md) — initial review of all 29 Wicofe repository READMEs/indexes, ownership boundaries, lifecycle status, licensing policy alignment, and outstanding actions.
-- [Wicofe dependency license policy](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.1.md) — project-wide license restrictions and conditional LGPL approval requirements.
+- [Wicofe dependency license policy](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md) — project-wide GPL/AGPL prohibition, conditional LGPL approval, and review requirements for other licenses.
 
 ## Canonical project references
 
