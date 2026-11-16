@@ -3,8 +3,8 @@
 **Policy authority:** [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md)  
 **Scope:** Canonical 29 repositories in Waizusora  
 **Implementation:** Wicofe-Tools Dependency License Auditor  
-**Latest completed cross-repository evidence:** [GitHub Actions run 43880910251](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43880910251)  
-**Cross-repository artifact:** [JSON/Markdown reports and Cargo metadata — artifact 14233220400](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43880910251/artifacts/14233220400)  
+**Latest completed cross-repository evidence:** [GitHub Actions run 43881861767](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861767)  
+**Cross-repository artifact:** [JSON/Markdown reports and Cargo metadata — artifact 14233016601](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861767/artifacts/14233016601)  
 **Result:** BLOCKED — prohibited GPL dependencies, unreviewed records, unknown evidence and incomplete coverage remain.
 
 ## 1. Executive summary
@@ -124,7 +124,7 @@ Wicofe-Image and Wicofe-Build still need to provide a final image inventory/SBOM
 
 ## 8. CI and release-gate status
 
-The strict cross-repository workflow [43880910251](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43880910251) completed with **failure**, not success. Its evidence artifact was uploaded successfully. The failure is fail-closed behavior while the prohibited and unapproved records remain.
+The strict cross-repository workflow [43881861767](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861767) completed with **failure**, not success. Its evidence artifact was uploaded successfully. The failure is fail-closed behavior while the prohibited and unapproved records remain.
 
 Wicofe-Tools local CI, auditor unit tests and local inventory generation passed on the reviewed revision. That does not mean the 29-repository strict audit passes.
 
