@@ -32,7 +32,7 @@
 | [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) | Shared Rust userspace libraries and safe ABI wrappers |
 | [Wicofe-Libc](https://github.com/Waizusora/Wicofe-Libc) | C standard library/runtime port, startup, syscall glue, compatibility |
 | [Osynit](https://github.com/Waizusora/Osynit) | PID 1, init, service definitions, dependency ordering, supervision, shutdown |
-| [Mysh](https://github.com/Waizusora/Mysh) | Independent shell implementation; Wicofe port/integration is a planned target |
+| [Mysh](https://github.com/Waizusora/Mysh) | Independent command-line shell; Wicofe shell integration is a planned target. Package management belongs to WPM |
 | [Wicofe-Services](https://github.com/Waizusora/Wicofe-Services) | Individual system daemons, IPC, privilege model, service lifecycle |
 | [Wicofe-Network](https://github.com/Waizusora/Wicofe-Network) | Userspace networking configuration, services, and diagnostics |
 | [Wicofe-Input](https://github.com/Waizusora/Wicofe-Input) | Userspace input policy, event routing, key maps, seats, and diagnostics |
