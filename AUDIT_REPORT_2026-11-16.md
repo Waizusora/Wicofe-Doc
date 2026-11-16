@@ -22,7 +22,7 @@ No system-wide implementation or CI conformance claim is made.
 ### AUD-2026-01 — Third-party license policy was inconsistent
 
 **Severity:** High  
-**Status:** Project decision recorded; repository-wide compliance audit remains open  
+**Status:** Project decision recorded; known documentation conflicts aligned; repository-wide dependency compliance audit remains open  
 **Affected repositories:** All 29 Wicofe repositories; policy authority in Wicofe-ThirdParty
 
 **Decision recorded:** [Wicofe Dependency License Policy 0.1](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.1.md).
@@ -33,7 +33,7 @@ No system-wide implementation or CI conformance claim is made.
 - Unknown or incomplete license evidence: blocked.
 - Original Wicofe-authored code targets MPL-2.0.
 
-The policy applies to direct and transitive dependencies, build tools and shipped non-code assets. The decision resolves the policy conflict; it does not prove that existing manifests, vendored code, build outputs or release images comply. Those inventories still require inspection.
+The policy applies to direct and transitive dependencies, build tools and shipped non-code assets. Wicofe-Docs/LICENSE_POLICY.md, Wicofe-ThirdParty README/index/intake architecture, Osynit README, and WDE README/licensing documentation were aligned with the decision. The decision resolves the policy conflict; it does not prove that existing manifests, vendored code, build outputs or release images comply. Those inventories still require inspection.
 
 ### AUD-2026-02 — Specification lifecycle previously mixed implementation status
 
