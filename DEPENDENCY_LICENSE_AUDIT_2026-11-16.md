@@ -78,7 +78,7 @@ Three multi-license expressions were held at NEEDS_REVIEW rather than auto-rejec
 - `libflac14`: GPL-2+ OR LGPL-2.1+.
 - `librdmacm1t64`: BSD-MIT OR GPL-2.
 
-Twenty-seven package records contain LGPL declarations in their copyright metadata; all remain NEEDS_REVIEW. The QEMU package family contains a non-SPDX `GPL2-or-LGPL2-with-additions` expression. The source-level scanner conservatively rejects QEMU based on upstream COPYING evidence; the package-level records remain NEEDS_REVIEW pending file/binary-level mapping. QEMU remains blocked.
+Sixty-three package records contain LGPL declarations in their copyright metadata: 27 have primary category LGPL, 26 are MIXED_REVIEW, three are OTHER_REVIEW and seven are REJECTED because their primary/required license is GPL. All non-rejected LGPL/mixed records remain NEEDS_REVIEW; the seven GPL-required records remain REJECTED. The QEMU package family contains a non-SPDX `GPL2-or-LGPL2-with-additions` expression. The source-level scanner conservatively rejects QEMU based on upstream COPYING evidence; the package-level records remain NEEDS_REVIEW pending file/binary-level mapping. QEMU remains blocked.
 
 The same run verified formatting, unit tests, x86-64 build, Limine ISO generation, ISO notice presence, QEMU BIOS boot and AArch64 target checks. Successful execution does not waive license blockers.
 
