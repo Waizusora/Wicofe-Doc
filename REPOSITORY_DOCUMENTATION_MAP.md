@@ -17,7 +17,7 @@
 
 ## Project-wide dependency licensing
 
-The binding [Wicofe Dependency License Policy 0.1](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.1.md) applies to every repository: GPL and AGPL dependencies are prohibited; LGPL is conditionally permitted only after essentiality, in-house feasibility, legal review and explicit project-owner approval; all other third-party dependency license families are disallowed unless the policy is formally amended. Unknown license evidence blocks approval.
+The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md) applies to every repository: GPL and AGPL dependencies are prohibited; LGPL is conditionally allowed after exact review and scoped approval; other licenses are allowed subject to compatibility and obligations review. Other copyleft, custom, proprietary or ambiguous terms require careful review and explicit project-owner approval. Unknown license evidence blocks approval.
 
 ## Kernel and low-level interfaces
 
