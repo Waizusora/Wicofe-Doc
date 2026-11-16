@@ -79,7 +79,18 @@ Candidate replacements recorded for review:
 
 No candidate is approved by this report. The current Wicofe-Kernel CI path remains blocked pending replacement validation or an explicit policy-owner decision.
 
-## 5. GitHub Actions and build-time dependencies
+## 5. LGPL-bearing optional license alternatives
+
+The WDE Cargo graph contains two `r-efi` versions with the expression `MIT OR Apache-2.0 OR LGPL-2.1-or-later`:
+
+| Package | Version | Parent | Target condition |
+|---|---|---|---|
+| `r-efi` | 5.3.0 | `getrandom 0.3.4` | UEFI target with `getrandom_backend = "efi_rng"` |
+| `r-efi` | 6.0.0 | `getrandom 0.4.3` | UEFI target with `getrandom_backend = "efi_rng"` |
+
+These are target-conditioned transitive edges captured by all-target metadata, not evidence that the current Linux WDE build links an LGPL library. The supported target matrix and an explicit selected license branch still require review. The scanner does not select MIT/Apache automatically and does not treat the LGPL alternative as approved.
+
+## 6. GitHub Actions and build-time dependencies
 
 The scan found 22 GitHub Actions records across six repositories: Mysh, Osynit, WDE, Wicofe-Kernel, Wicofe-Tools and Wicofe-Build.
 
@@ -87,7 +98,7 @@ Upstream license evidence was collected for selected action revisions, including
 
 The remaining 72 build-tool command records, 14 system-package records, 12 build-script command records, six runner-image records, three Rust toolchain records and one downloaded-artifact record also require evidence/review. A pinned action or package version does not establish license approval.
 
-## 6. Vendored assets and final image
+## 7. Vendored assets and final image
 
 Two known vendored source/license files were detected in Wicofe-Kernel under `third_party/licenses/limine-12.9.6/`. Both remain UNKNOWN in the asset inventory because their presence as license documents is not a complete component/source/binary distribution record.
 
@@ -95,7 +106,7 @@ No Git submodules were detected by the current scanner. This does not prove that
 
 Wicofe-Image and Wicofe-Build still need to provide a final image inventory/SBOM and reconcile it with the complete dependency, toolchain, vendored-source and notice inventory.
 
-## 7. CI and release-gate status
+## 8. CI and release-gate status
 
 The strict cross-repository workflow run [43878335380](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335380) completed with **failure**, not success. Its evidence artifact was uploaded successfully. The failure is intentional fail-closed behavior.
 
@@ -103,7 +114,7 @@ The run's checked-out repository revisions are recorded inside each JSON report 
 
 Wicofe-Build has a reusable/tag-triggered release dependency gate that invokes the Wicofe-Tools strict cross-repository workflow using an immutable workflow revision and a separately pinned auditor source revision. This is not yet a complete end-to-end release pipeline: final-image publication is not fully gated on a successful strict audit and final-image SBOM reconciliation.
 
-## 8. Required follow-up
+## 9. Required follow-up
 
 1. Replace the two rejected GPL host tools with reviewed, permitted alternatives; preserve ISO-generation and x86 boot-validation parity.
 2. Review and approve/reject all 244 NEEDS_REVIEW records with exact scope, source revision, license evidence, obligations, notices, security and maintenance status.
@@ -113,7 +124,7 @@ Wicofe-Build has a reusable/tag-triggered release dependency gate that invokes t
 6. Reconcile Wicofe-Build outputs and Wicofe-Image final image contents against a complete SBOM and notice bundle.
 7. Require a successful strict audit and final-image reconciliation tied to the exact release commit.
 
-## 9. Detailed review queue
+## 10. Detailed review queue
 
 See the [Wicofe-ThirdParty dependency review queue](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/DEPENDENCY_REVIEW_QUEUE_2026-11-16.md) for the two GPL replacement blockers, both LGPL-bearing `r-efi` alternatives, the 26 unique UNKNOWN identities, the empty approved inventory and triage order.
 
