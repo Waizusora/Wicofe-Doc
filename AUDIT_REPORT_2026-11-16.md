@@ -13,7 +13,7 @@ Three ownership/status ambiguities were corrected during this audit:
 2. ONWFS format ownership is distinguished from Wicofe-Storage system-level workflows.
 3. Kernel DKM loader/ABI ownership is distinguished from concrete driver implementations.
 
-The initial license-policy conflict has been resolved by project-owner decision and recorded in the binding Wicofe Dependency License Policy 0.1. Repository-wide dependency compliance remains unaudited.
+The initial license-policy conflict was first recorded in policy 0.1, then corrected by project-owner clarification and superseded by Dependency License Policy 0.2. Policy 0.2 is authoritative. Repository-wide dependency compliance remains unaudited.
 
 No system-wide implementation or CI conformance claim is made.
 
@@ -25,15 +25,16 @@ No system-wide implementation or CI conformance claim is made.
 **Status:** Project decision recorded; known documentation conflicts aligned; repository-wide dependency compliance audit remains open  
 **Affected repositories:** All 29 Wicofe repositories; policy authority in Wicofe-ThirdParty
 
-**Decision recorded:** [Wicofe Dependency License Policy 0.1](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.1.md).
+**Corrected decision:** [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md) supersedes 0.1.
 - GPL: prohibited.
 - AGPL: prohibited.
-- LGPL: conditionally eligible only when essential, not reasonably implementable in-house, exact-version legal and technical review passes, and the project owner explicitly approves the scoped use.
-- All other third-party dependency license families: disallowed unless the policy is formally amended.
-- Unknown or incomplete license evidence: blocked.
+- LGPL: conditionally allowed after exact-version technical/license review and scoped approval; prefer in-house implementation when reasonably feasible.
+- Other licenses: allowed when exact terms, compatibility and obligations are reviewed and met.
+- Other copyleft, custom, proprietary or ambiguous terms: require careful review and explicit project-owner approval.
+- Unknown or incomplete license evidence: blocked pending review.
 - Original Wicofe-authored code targets MPL-2.0.
 
-The policy applies to direct and transitive dependencies, build tools and shipped non-code assets. Wicofe-Docs/LICENSE_POLICY.md, Wicofe-ThirdParty README/index/intake architecture, Osynit README, and WDE README/licensing documentation were aligned with the decision. The decision resolves the policy conflict; it does not prove that existing manifests, vendored code, build outputs or release images comply. Those inventories still require inspection.
+Policy 0.2 applies to direct and transitive dependencies, build tools and shipped non-code assets. Wicofe-Docs/LICENSE_POLICY.md, the central repository map, Wicofe-ThirdParty README/index/intake architecture, Osynit README, WDE README/licensing documentation and Wicofe-Tools policy links were aligned. The corrected policy does not prove that existing manifests, vendored code, build outputs or release images comply; those inventories still require inspection.
 
 ### AUD-2026-02 — Specification lifecycle previously mixed implementation status
 
@@ -159,7 +160,7 @@ Unit tests and the workflow definition were committed and fetched back for conte
 
 The project owner resolved AUD-2026-01 and the policy is now canonical in Wicofe-ThirdParty:
 
-- [Dependency license policy](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.1.md)
+- [Dependency license policy](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md)
 - [Third-party intake architecture](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/docs/THIRD_PARTY_INTAKE_ARCHITECTURE_0.1.md)
 - [Central repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md)
 
@@ -171,3 +172,12 @@ Wicofe-Tools also contains a canonical 29-repository checkout list and a read-on
 - [Usage guide](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/REPOSITORY_INVENTORY_VALIDATOR.md)
 
 The existing GitHub Actions test workflow now watches all scripts, tests and configuration files. The validator compares local checkout directories only; it does not prove remote GitHub repository existence. GitHub Actions run [43808126021](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43808126021) completed successfully. The `unit-tests` job and `Run validator unit tests` step both report success. This verifies the unit-test suite at commit `c5cd3f1b8965f4fe9658a26b2a2ec3331607c028`; it does not establish full 29-repository inventory or dependency-license compliance.
+
+
+## 9. Project-owner clarification — dependency license policy 0.2
+
+The project owner clarified that third-party licenses other than GPL and AGPL are allowed. The earlier policy 0.1, which disallowed every non-LGPL license family, was too restrictive and is superseded by [Dependency License Policy 0.2](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md).
+
+Current rule: GPL and AGPL are prohibited; LGPL is conditionally allowed after exact review and scoped approval; all other licenses are allowed subject to their actual terms, compatibility and compliance obligations. Other copyleft, custom, proprietary or ambiguous terms require careful review and explicit project-owner approval. In-house implementation remains preferred where reasonably feasible, but the project does not require reinventing components when that would materially worsen security or maintainability.
+
+Policy summaries and repository links were updated in the central docs, ThirdParty, Osynit, WDE and Wicofe-Tools. This is a documentation/policy correction only. The full dependency inventory and compliance audit remain outstanding.
