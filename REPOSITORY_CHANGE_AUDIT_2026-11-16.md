@@ -153,6 +153,6 @@ The following documentation changes were made after the 14:12:13 UTC HEAD snapsh
 1. Re-run strict cross-repository audit against the current 29 default-branch heads after the latest documentation commits.
 2. Replace or explicitly resolve the two prohibited GPL host tools in Wicofe-Kernel without losing ISO generation and boot-validation coverage.
 3. Review all LGPL/copy-left candidates, including exact version, link method, source/relinking obligations, notices and replacement tests.
-4. Complete human review for the 241 NEEDS_REVIEW dependency/build-time records and investigate the UNKNOWN records from the latest evidence artifact.
+4. Complete human review for the 243 NEEDS_REVIEW dependency/build-time records and investigate the UNKNOWN records from the latest evidence artifact.
 5. Resolve non-Cargo ecosystems, system package closure, vendored assets and final-image SBOM coverage.
 6. Update the dependency report and Wicofe-ThirdParty inventory from the refreshed artifact; do not claim Wicofe-wide compliance until release-image reconciliation passes.
