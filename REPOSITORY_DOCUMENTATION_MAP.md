@@ -53,6 +53,11 @@
 | [Wicofe-SDK](https://github.com/Waizusora/Wicofe-SDK) | Application developer toolchain, sysroot, headers, linker, templates |
 | [Wicofe-Ports](https://github.com/Waizusora/Wicofe-Ports) | Upstream build recipes, patches, port status, integration notes |
 
+## Project-level documentation indexes
+
+- [Wicofe project documentation](https://github.com/Waizusora/Wicofe/blob/main/docs/INDEX.md) — whole-system architecture, roadmap, repository map, and project decisions.
+- [Wicofe-Docs central guide index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md) — user, administrator, developer, contributor, and troubleshooting guides.
+
 ## Component documentation indexes
 
 Every linked `docs/INDEX.md` is scoped to its repository. The root Wicofe repository remains the only place for the whole-system architecture overview; component repositories must not copy that overview as their own technical documentation.
