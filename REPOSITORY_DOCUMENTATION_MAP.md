@@ -35,7 +35,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 |---|---|
 | [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) | Shared Rust userspace libraries and safe ABI wrappers |
 | [Wicofe-Libc](https://github.com/Waizusora/Wicofe-Libc) | C standard library/runtime port, startup, syscall glue, compatibility |
-| [OSynit](https://github.com/Waizusora/Osynit) | PID 1, init, service definitions, dependency ordering, supervision, shutdown |
+| [Osynit](https://github.com/Waizusora/Osynit) | PID 1, init, service definitions, dependency ordering, supervision, shutdown |
 | [Mysh](https://github.com/Waizusora/Mysh) | Independent command-line shell; Wicofe shell integration is a planned target. Package management belongs to WPM |
 | [Wicofe-Services](https://github.com/Waizusora/Wicofe-Services) | Individual system daemons, IPC, privilege model, service lifecycle |
 | [Wicofe-Network](https://github.com/Waizusora/Wicofe-Network) | Userspace networking configuration, services, and diagnostics |
