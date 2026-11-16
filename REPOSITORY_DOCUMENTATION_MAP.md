@@ -12,8 +12,12 @@
 | [Wicofe-Docs](https://github.com/Waizusora/Wicofe-Docs) | User, administrator, developer, contributor, and troubleshooting guides; central documentation navigation |
 | [Wicofe-Specs](https://github.com/Waizusora/Wicofe-Specs) | Normative cross-component specifications and shared contracts |
 | [Wicofe-Tests](https://github.com/Waizusora/Wicofe-Tests) | Cross-repository conformance, integration tests, fixtures, and test strategy |
-| [Wicofe-Tools](https://github.com/Waizusora/Wicofe-Tools) | Shared developer, validation, maintenance, and release tools; [documentation validator](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/REPOSITORY_DOCUMENTATION_VALIDATOR.md) |
+| [Wicofe-Tools](https://github.com/Waizusora/Wicofe-Tools) | Shared developer, validation, maintenance, and release tools; [documentation validator](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/REPOSITORY_DOCUMENTATION_VALIDATOR.md), [repository inventory validator](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/REPOSITORY_INVENTORY_VALIDATOR.md) |
 | [Wicofe-ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty) | Third-party inventory, provenance, licensing, notices, and approval records |
+
+## Project-wide dependency licensing
+
+The binding [Wicofe Dependency License Policy 0.1](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.1.md) applies to every repository: GPL and AGPL dependencies are prohibited; LGPL is conditionally permitted only after essentiality, in-house feasibility, legal review and explicit project-owner approval; all other third-party dependency license families are disallowed unless the policy is formally amended. Unknown license evidence blocks approval.
 
 ## Kernel and low-level interfaces
 
