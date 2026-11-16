@@ -60,7 +60,7 @@ The source/build scanner does not install every repository's host dependencies. 
 
 ### Wicofe-Kernel
 
-[Kernel CI run 43882559388](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882559388) completed successfully and uploaded [system package evidence artifact 14233207628](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882559388/artifacts/14233207628).
+[Kernel CI run 43882914312](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882914312) completed successfully and uploaded [system package evidence artifact 14232478108](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882914312/artifacts/14232478108).
 
 | Package inventory status | Count |
 |---|---:|
