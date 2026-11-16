@@ -12,7 +12,7 @@
 | [Wicofe-Docs](https://github.com/Waizusora/Wicofe-Docs) | User, administrator, developer, contributor, and troubleshooting guides; central documentation navigation |
 | [Wicofe-Specs](https://github.com/Waizusora/Wicofe-Specs) | Normative cross-component specifications and shared contracts |
 | [Wicofe-Tests](https://github.com/Waizusora/Wicofe-Tests) | Cross-repository conformance, integration tests, fixtures, and test strategy |
-| [Wicofe-Tools](https://github.com/Waizusora/Wicofe-Tools) | Shared developer, validation, maintenance, and release tools |
+| [Wicofe-Tools](https://github.com/Waizusora/Wicofe-Tools) | Shared developer, validation, maintenance, and release tools; [documentation validator](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/REPOSITORY_DOCUMENTATION_VALIDATOR.md) |
 | [Wicofe-ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty) | Third-party inventory, provenance, licensing, notices, and approval records |
 
 ## Kernel and low-level interfaces
