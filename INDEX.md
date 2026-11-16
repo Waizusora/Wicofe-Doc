@@ -10,7 +10,11 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 - `contributing/` — contribution and review process.
 - `troubleshooting/` — diagnostics and recovery procedures.
 
-## Repository documentation ownership\n\n- [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.\n\n## Canonical project references
+## Repository documentation ownership
+
+- [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.
+
+## Canonical project references
 
 - [Wicofe repository map](https://github.com/Waizusora/Wicofe/blob/main/docs/REPOSITORY_MAP.md)
 - [Wicofe architecture](https://github.com/Waizusora/Wicofe/blob/main/docs/ARCHITECTURE.md)
