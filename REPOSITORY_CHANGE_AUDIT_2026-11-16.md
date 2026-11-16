@@ -118,9 +118,9 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 The following documentation changes were made after the main commit survey and strict-audit snapshot. They do not alter dependency resolution inputs; WDE's CI was re-run after its licensing status note and completed successfully.
 
 - Wicofe-Kernel licensing documentation now records the 103-package CI closure, 15 GPL rejects and LGPL/mixed-license inventory: `8986aa49192ddc9e03aacb20ebae666022515fa7`.
-- WDE licensing documentation now records the 32-package CI closure and 13 UNKNOWN package identities: `6be54a7e34d60dfc8ad60066a1bcb05059a29d63`.
+- WDE licensing documentation now records the 32-package CI closure, 13 UNKNOWN package identities and the latest cross-repository evidence: `ee8f12326ebb7054668bab31a5b89432dfffbf8e`.
 - Wicofe-Docs dependency report now reconciles cross-repository source/build findings with separate Kernel and WDE package artifacts: `3754a1bca5d5f62487ca5a6669301023da525602`.
-- Wicofe-ThirdParty review queue now lists exact GPL, LGPL, mixed-license, optional-OR and UNKNOWN package evidence: `6abc9dede5ce694e375848979872d58892ef7ff2`.
+- Wicofe-ThirdParty review queue now lists exact GPL, LGPL, mixed-license, optional-OR and UNKNOWN package evidence: `2b2ed2baabe6eb88a549fa056826dc3fc0d2c3c1`.
 - Wicofe-ThirdParty AUDIT now links current CI package closure evidence and immutable Bochs 3.1/PyCdlib 1.22.0 source/license snapshots: `46ca5e234c4836797f7bc9134ba6e3199099cbec`.
 
 ## 8. Next work
