@@ -29,12 +29,12 @@ The SHA column records the exact commit observed at the snapshot. Later document
 | Repository | Main HEAD | Latest observed change |
 |---|---|---|
 | Wicofe | `56ccdb80b1fabd5cb4f1286fbe8889d8af29ed53` | Standardize project name as Osynit |
-| Wicofe-Docs | `a30583bb57647e369097e52024fd2defa4837722` | Fix central index and add change-audit navigation |
+| Wicofe-Docs | `6ace755b79b94808276626d1cb224de9a7e1afc5` | Record latest 29-repository change audit |
 | Wicofe-Specs | `a9e86236617bfc00489eaacaaf507f0506b048d5` | Remove duplicate Osynit contract index entries |
 | Wicofe-Tests | `6210042246ce0d3553dd852df4e0358019085dce` | Standardize project name as Osynit |
 | Wicofe-Tools | `e113ec275cb45278683ac4a3da08fc6561bb59c2` | Fix tooling index and list dependency audit docs |
 | Wicofe-ThirdParty | `d7755a6d9d9e8aa26e68e55aaa3bcd079b297f70` | Document Limine release license inclusion and notices |
-| Wicofe-Kernel | `e85d02f243fce9877797f18fdc8bc04d05a11309` | Standardize project name as Osynit |
+| Wicofe-Kernel | `ff6ec4bb8aa36fdf656fbbfff402eba016493221` | Remove duplicate Osynit documentation index entry |
 | Wicofe-ABI | `cab3cc6fd8c05f27e7862147f30a087a852f94e5` | Standardize project name as Osynit |
 | Wicofe-Drivers | `7c3d05e8dec0cd66c103491d8b04f7e6c3877953` | Index driver subsystem design |
 | Wicofe-Storage | `b42c7f75ff3c1ef93a7af06e7246792c68b73c4e` | Index storage management design |
@@ -50,7 +50,7 @@ The SHA column records the exact commit observed at the snapshot. Later document
 | WDE | `471c66ed8951295d9f8533c0a43c786ffe552074` | Pin CI actions and inventory apt package licenses |
 | WPM | `184d483bce67c377b8e4fc9581fb0116b5ce954f` | Link package manager documentation index |
 | Mysh | `f84227e3dfb2a0fe8154003b63997d3f32a9652f` | Document concurrent external pipeline execution |
-| Wicofe-Build | `4d4041c863e5e905a5299335f88a4403ce76e4ee` | Standardize project name as Osynit |
+| Wicofe-Build | `7563cd28f9205cabd334e29716759f22ae756477` | Remove duplicate Osynit documentation index entry |
 | Wicofe-Image | `6ebb653f9e555dfb849d860aaf89c79b2da0570b` | Standardize project name as Osynit |
 | Wicofe-Installer | `9d88c64e41baab6c7aacb5d9637f3629facaef70` | Standardize project name as Osynit |
 | Wicofe-Update | `2e9ecfb1ba93d6f6d0175d6fe8bda51ed233397e` | Index installer and update architecture |
