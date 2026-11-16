@@ -95,9 +95,9 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 
 | Repository | Workflow run | Result | Verified scope |
 |---|---|---|---|
-| Wicofe-Tools | [43881861725](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861725) | SUCCESS | Tooling CI |
-| Wicofe-Tools | [43881861746](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861746) | SUCCESS | Repository validator tests |
+| Wicofe-Tools | [43881861725](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861725) | SUCCESS | Tooling metadata CI |
 | Wicofe-Tools | [43881861746](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861746) | SUCCESS | Dependency auditor unit tests and local inventory generation |
+| Wicofe-Tools | [43881861874](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861874) | SUCCESS | Cross-repository baseline validation and checkout inventory |
 | Wicofe-Tools | [43881861767](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43881861767) | FAILURE (expected strict block) | 29-repository audit; 2 direct GPL rejects, 243 NEEDS_REVIEW and 102 UNKNOWN |
 | Mysh | [43878047450](https://github.com/Waizusora/Mysh/actions/runs/43878047450) | SUCCESS | Rust quality checks, Android ARM64/x86-64 builds and smoke tests, Linux musl ARM64/x86-64 builds/tests |
 | Osynit | [43878064271](https://github.com/Waizusora/Osynit/actions/runs/43878064271) | SUCCESS | Rust CI on the documentation-index cleanup commit |
