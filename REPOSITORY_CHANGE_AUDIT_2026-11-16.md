@@ -102,7 +102,7 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 | Mysh | [43878047450](https://github.com/Waizusora/Mysh/actions/runs/43878047450) | SUCCESS | Rust quality checks, Android ARM64/x86-64 builds and smoke tests, Linux musl ARM64/x86-64 builds/tests |
 | Osynit | [43878064271](https://github.com/Waizusora/Osynit/actions/runs/43878064271) | SUCCESS | Rust CI on the documentation-index cleanup commit |
 | WDE | [43882021012](https://github.com/Waizusora/WDE/actions/runs/43882021012) | SUCCESS | CI with the corrected pinned package-license auditor; [system-package artifact 14231069939](https://github.com/Waizusora/WDE/actions/runs/43882021012/artifacts/14231069939) |
-| Wicofe-Kernel | [43882559388](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882559388) | SUCCESS | x86-64 build, ISO generation/notice check, QEMU boot, AArch64 check; [package artifact 14233207628](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882559388/artifacts/14233207628) |
+| Wicofe-Kernel | [43882914312](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882914312) | SUCCESS | x86-64 build, ISO generation/notice check, QEMU boot, AArch64 check; [package artifact 14232478108](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43882914312/artifacts/14232478108) |
 
 ## 6. Verification boundaries
 
