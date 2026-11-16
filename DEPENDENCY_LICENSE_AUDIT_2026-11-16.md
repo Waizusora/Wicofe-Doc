@@ -3,8 +3,8 @@
 **Policy authority:** [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md)  
 **Scope:** Canonical 29 repositories in Waizusora  
 **Implementation:** Wicofe-Tools Dependency License Auditor  
-**Latest completed evidence snapshot in this report:** [GitHub Actions run 43877691846](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43877691846)  
-**Artifact:** [29-repository JSON/Markdown reports and Cargo metadata](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43877691846/artifacts/14231895200)  
+**Latest completed evidence snapshot in this report:** [GitHub Actions run 43878335380](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335380)  
+**Artifact:** [29-repository JSON/Markdown reports and Cargo metadata](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335380/artifacts/14231212277)  
 **Result:** BLOCKED — prohibited GPL build tools, unreviewed dependencies, unknown evidence and incomplete coverage remain.
 
 ## 1. Executive summary
@@ -62,7 +62,7 @@ The audit artifact contains 217 Cargo dependency records. The graph includes dir
 
 ## 4. Prohibited GPL dependencies
 
-<badge>REJECTED — release blockers</badge>
+**REJECTED — release blockers**
 
 Two GPL-2.0-or-later host tools were detected in Wicofe-Kernel's `.github/workflows/kernel-check.yml`:
 
@@ -97,7 +97,7 @@ Wicofe-Image and Wicofe-Build still need to provide a final image inventory/SBOM
 
 ## 7. CI and release-gate status
 
-The strict cross-repository workflow run [43877691846](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43877691846) completed with **failure**, not success. Its evidence artifact was uploaded successfully. The failure is intentional fail-closed behavior.
+The strict cross-repository workflow run [43878335380](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335380) completed with **failure**, not success. Its evidence artifact was uploaded successfully. The failure is intentional fail-closed behavior.
 
 The run's checked-out repository revisions are recorded inside each JSON report as `repository_commit`. They are a point-in-time audit snapshot and must not be conflated with later default-branch commits listed in [Repository Change Audit](REPOSITORY_CHANGE_AUDIT_2026-11-16.md).
 
