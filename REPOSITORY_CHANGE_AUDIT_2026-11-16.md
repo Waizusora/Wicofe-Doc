@@ -106,6 +106,7 @@ The following documentation changes were made after the main commit survey and s
 - WDE licensing status note: `c15da9e096822ac25a86235002b978ca8d781a31`.
 - Wicofe-Docs dependency report refresh and review-queue link: `d026f5bd7f7863d1b84c9f5902cd25e080b63d49`.
 - Wicofe-ThirdParty dependency review queue and index link: `8995c332f396e50a60652f973070a5e7668ef332`.
+- Wicofe-ThirdParty verified Bochs/PyCdlib replacement candidate evidence and updated audit: `6efb3c0339dac7f92d96260734209ef34f51758d`.
 
 ## 7. Next work
 
