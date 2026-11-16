@@ -57,7 +57,7 @@ The scanner also found zero known vendored/binary asset records and zero Git sub
 
 ## Strict CI result
 
-<badge>BLOCKED</badge>
+**BLOCKED**
 
 The strict cross-repository workflow failed because:
 1. 25 repositories have UNKNOWN dependency coverage.
