@@ -95,12 +95,14 @@ Wicofe-ThirdParty contains Limine source/license evidence and the current kernel
 
 | Repository | Workflow run | Result | Verified scope |
 |---|---|---|---|
-| Wicofe-Tools | [43878335350](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335350) | SUCCESS | Tooling CI |
-| Wicofe-Tools | [43878335263](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335263) | SUCCESS | Local dependency auditor and unit-test workflow |
-| Wicofe-Tools | [43878335380](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335380) | FAILURE (expected strict block) | 29-repository audit; two GPL rejects, unresolved approvals and UNKNOWN coverage |
+| Wicofe-Tools | [43880910081](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43880910081) | SUCCESS | Tooling CI |
+| Wicofe-Tools | [43880910076](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43880910076) | SUCCESS | Repository validator tests |
+| Wicofe-Tools | [43880910185](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43880910185) | SUCCESS | Dependency auditor unit tests and local inventory generation |
+| Wicofe-Tools | [43880910251](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43880910251) | FAILURE (expected strict block) | 29-repository audit; 2 direct GPL rejects, 243 NEEDS_REVIEW and 102 UNKNOWN |
 | Mysh | [43878047450](https://github.com/Waizusora/Mysh/actions/runs/43878047450) | SUCCESS | Rust quality checks, Android ARM64/x86-64 builds and smoke tests, Linux musl ARM64/x86-64 builds/tests |
 | Osynit | [43878064271](https://github.com/Waizusora/Osynit/actions/runs/43878064271) | SUCCESS | Rust CI on the documentation-index cleanup commit |
-| WDE | [43878701227](https://github.com/Waizusora/WDE/actions/runs/43878701227) | SUCCESS | WDE CI after its licensing audit-status documentation update |
+| WDE | [43880983235](https://github.com/Waizusora/WDE/actions/runs/43880983235) | SUCCESS | CI with the corrected pinned package-license auditor; [system-package artifact 14231024109](https://github.com/Waizusora/WDE/actions/runs/43880983235/artifacts/14231024109) |
+| Wicofe-Kernel | [43880975214](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43880975214) | SUCCESS | x86-64 build, ISO generation/notice check, QEMU boot, AArch64 check; [package artifact 14232042726](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43880975214/artifacts/14232042726) |
 
 ## 6. Verification boundaries
 
