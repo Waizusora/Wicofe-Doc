@@ -91,15 +91,27 @@ WDE's latest CI change pins the Rust toolchain/action sources and inventories in
 
 Wicofe-ThirdParty contains Limine source/license evidence and the current kernel host-tool review. Wicofe-Build contains a reusable strict dependency gate that invokes the Wicofe-Tools cross-repository workflow at an immutable workflow revision and pins the auditor source separately. This does not yet establish a completed end-to-end image publication gate.
 
-## 5. Verification boundaries
+## 5. CI evidence checked
+
+| Repository | Workflow run | Result | Verified scope |
+|---|---|---|---|
+| Wicofe-Tools | [43878335350](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335350) | SUCCESS | Tooling CI |
+| Wicofe-Tools | [43878335263](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335263) | SUCCESS | Local dependency auditor and unit-test workflow |
+| Wicofe-Tools | [43878335380](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43878335380) | FAILURE (expected strict block) | 29-repository audit; two GPL rejects, unresolved approvals and UNKNOWN coverage |
+| Mysh | [43878047450](https://github.com/Waizusora/Mysh/actions/runs/43878047450) | SUCCESS | Rust quality checks, Android ARM64/x86-64 builds and smoke tests, Linux musl ARM64/x86-64 builds/tests |
+| Osynit | [43878064271](https://github.com/Waizusora/Osynit/actions/runs/43878064271) | SUCCESS | Rust CI on the documentation-index cleanup commit |
+| WDE | [43878701227](https://github.com/Waizusora/WDE/actions/runs/43878701227) | SUCCESS | WDE CI after its licensing audit-status documentation update |
+
+## 6. Verification boundaries
 
 - GitHub default-branch commit and tree reads succeeded for all 29 repositories.
 - The dependency audit artifact is a separate point-in-time snapshot. Its recorded repository revisions must not be conflated with the newer commit table above.
 - Documentation changes were committed and fetched back from GitHub before being recorded here.
-- No full build, target matrix, emulator boot, hardware test or final-image SBOM reconciliation was performed by this documentation/commit survey.
+- The selected CI runs above are verified; they do not establish that every repository or every release target builds and tests successfully.
+- No hardware boot test or final-image SBOM reconciliation was performed in this audit.
 - A successful local dependency-auditor CI run does not imply that the strict cross-repository audit passes.
 
-## 6. Post-snapshot documentation-only follow-ups
+## 7. Post-snapshot documentation-only follow-ups
 
 The following documentation changes were made after the main commit survey and strict-audit snapshot. They do not alter dependency resolution inputs; WDE's CI was re-run after its licensing status note and completed successfully.
 
@@ -108,7 +120,7 @@ The following documentation changes were made after the main commit survey and s
 - Wicofe-ThirdParty dependency review queue and index link: `8995c332f396e50a60652f973070a5e7668ef332`.
 - Wicofe-ThirdParty verified Bochs/PyCdlib replacement candidate evidence and updated audit: `6efb3c0339dac7f92d96260734209ef34f51758d`.
 
-## 7. Next work
+## 8. Next work
 
 1. Re-run strict cross-repository audit against the current 29 default-branch heads after the latest documentation commits.
 2. Replace or explicitly resolve the two prohibited GPL host tools in Wicofe-Kernel without losing ISO generation and boot-validation coverage.
