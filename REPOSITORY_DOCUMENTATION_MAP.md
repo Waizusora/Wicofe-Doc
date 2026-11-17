@@ -35,7 +35,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 |---|---|
 | [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) | Shared Rust userspace libraries and safe ABI wrappers |
 | [Wicofe-Libc](https://github.com/Waizusora/Wicofe-Libc) | C standard library/runtime port, startup, syscall glue, compatibility |
-| [Osynit](https://github.com/Waizusora/Osynit) | PID 1, init, service definitions, dependency ordering, supervision, shutdown; canonical [system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) |
+| [Frenit](https://github.com/Waizusora/Frenit) | Free Init implementation, CLI, service-management foundation; native Wicofe PID 1 integration remains unverified |
 | [Mysh](https://github.com/Waizusora/Mysh) | Independent command-line shell; Wicofe shell integration is a planned target. Package management belongs to WPM |
 | [Wicofe-Services](https://github.com/Waizusora/Wicofe-Services) | Individual system daemons, IPC, privilege model, service lifecycle |
 | [Wicofe-Network](https://github.com/Waizusora/Wicofe-Network) | Userspace networking configuration, services, and diagnostics |
@@ -60,8 +60,8 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 ## Project-level documentation indexes
 
 - [Wicofe project documentation](https://github.com/Waizusora/Wicofe/blob/main/docs/INDEX.md) — whole-system architecture, roadmap, repository map, and project decisions.
-- [Osynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) — accepted init architecture baseline; implementation remains partial/prototype.
-- [Osynit core architecture contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/OSYNIT_CORE_ARCHITECTURE_CONTRACT_0.1.md) — cross-repository Core Init boundary.
+- [Frenit README](https://github.com/Waizusora/Frenit/blob/main/README.md) — canonical project identity, executable name, CLI convention, and current implementation status.
+- [Frenit integration contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — proposed cross-repository integration boundary.
 - [Wicofe-Docs central guide index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md) — user, administrator, developer, contributor, and troubleshooting guides.
 - [System delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned CLI install/update experience and Delivery Release policy direction; not normative implementation evidence.
 
@@ -71,7 +71,7 @@ Every linked `docs/INDEX.md` is scoped to its repository. The root Wicofe reposi
 
 - [Kernel](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/INDEX.md) · [ABI](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/INDEX.md) · [Drivers](https://github.com/Waizusora/Wicofe-Drivers/blob/main/docs/INDEX.md) · [Storage](https://github.com/Waizusora/Wicofe-Storage/blob/main/docs/INDEX.md) · [ONWFS](https://github.com/Waizusora/ONWFS/blob/main/docs/INDEX.md)
 - [Lib](https://github.com/Waizusora/Wicofe-Lib/blob/main/docs/INDEX.md) · [Libc](https://github.com/Waizusora/Wicofe-Libc/blob/main/docs/INDEX.md) · [Services](https://github.com/Waizusora/Wicofe-Services/blob/main/docs/INDEX.md) · [Network](https://github.com/Waizusora/Wicofe-Network/blob/main/docs/INDEX.md) · [Input](https://github.com/Waizusora/Wicofe-Input/blob/main/docs/INDEX.md)
-- [Graphics](https://github.com/Waizusora/Wicofe-Graphics/blob/main/docs/INDEX.md) · [Audio](https://github.com/Waizusora/Wicofe-Audio/blob/main/docs/INDEX.md) · [WDE](https://github.com/Waizusora/WDE/blob/main/docs/INDEX.md) · [Osynit](https://github.com/Waizusora/Osynit/blob/main/docs/INDEX.md) · [Mysh](https://github.com/Waizusora/Mysh/blob/main/docs/INDEX.md) · [WPM](https://github.com/Waizusora/WPM/blob/main/docs/INDEX.md)
+- [Graphics](https://github.com/Waizusora/Wicofe-Graphics/blob/main/docs/INDEX.md) · [Audio](https://github.com/Waizusora/Wicofe-Audio/blob/main/docs/INDEX.md) · [WDE](https://github.com/Waizusora/WDE/blob/main/docs/INDEX.md) · [Frenit](https://github.com/Waizusora/Frenit/blob/main/README.md) · [Mysh](https://github.com/Waizusora/Mysh/blob/main/docs/INDEX.md) · [WPM](https://github.com/Waizusora/WPM/blob/main/docs/INDEX.md)
 - [Build](https://github.com/Waizusora/Wicofe-Build/blob/main/docs/INDEX.md) · [Image](https://github.com/Waizusora/Wicofe-Image/blob/main/docs/INDEX.md) · [Installer](https://github.com/Waizusora/Wicofe-Installer/blob/main/docs/INDEX.md) · [Update](https://github.com/Waizusora/Wicofe-Update/blob/main/docs/INDEX.md) · [Recovery](https://github.com/Waizusora/Wicofe-Recovery/blob/main/docs/INDEX.md)
 - [SDK](https://github.com/Waizusora/Wicofe-SDK/blob/main/docs/INDEX.md) · [Ports](https://github.com/Waizusora/Wicofe-Ports/blob/main/docs/INDEX.md) · [Tools](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/INDEX.md) · [Specs](https://github.com/Waizusora/Wicofe-Specs/blob/main/docs/INDEX.md) · [Tests](https://github.com/Waizusora/Wicofe-Tests/blob/main/docs/INDEX.md) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/docs/INDEX.md)
 
