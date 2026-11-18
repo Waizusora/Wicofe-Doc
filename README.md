@@ -10,6 +10,10 @@ Central user, developer, administrator, and contributor documentation for Wicofe
 - System operation, configuration, troubleshooting, and maintenance guides.
 - Cross-component documentation that does not belong exclusively to a component repository.
 
+## Project-wide principles
+
+The [Wicofe Project Principles](PROJECT_PRINCIPLES.md) define the system-wide identity, native architecture, POSIX/non-GNU direction, licensing preferences, and upstream reuse policy. These principles apply to every Wicofe repository and component.
+
 ## Documentation ownership
 
 Normative interface and format requirements belong in Wicofe-Specs or the owning component's specification. This repository explains how to use, develop, configure, and operate the system. Component-specific implementation details should link to the authoritative component documentation rather than duplicate it.
