@@ -2,6 +2,10 @@
 
 Central user, developer, administrator, and contributor documentation for Wicofe OS.
 
+## Project identity
+
+Wicofe is an independent Unix-like, POSIX-compatible operating system and software ecosystem, designed as an alternative to established and widely adopted software ecosystems and technologies, including GNU. It prioritizes native Wicofe interfaces and standards-based interoperability without requiring Linux libc or GNU compatibility layers.
+
 ## Scope
 
 - Getting-started material and project overview.
@@ -12,7 +16,7 @@ Central user, developer, administrator, and contributor documentation for Wicofe
 
 ## Project-wide principles
 
-The [Wicofe Project Principles](PROJECT_PRINCIPLES.md) define the system-wide identity, native architecture, POSIX/non-GNU direction, licensing preferences, and upstream reuse policy. These principles apply to every Wicofe repository and component.
+The [Wicofe Project Principles](PROJECT_PRINCIPLES.md) define the system-wide identity, native architecture, POSIX compatibility and ecosystem independence, licensing preferences, and upstream reuse policy. These principles apply to every Wicofe repository and component.
 
 ## Documentation ownership
 
