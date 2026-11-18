@@ -34,7 +34,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 | Repository | Documentation responsibility |
 |---|---|
 | [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) | Shared Rust userspace libraries and safe ABI wrappers |
-| [Wicofe-Libc](https://github.com/Waizusora/Wicofe-Libc) | C standard library/runtime port, startup, syscall glue, compatibility |
+| [Wlibc](https://github.com/Waizusora/Wicofe-Libc) | C standard library/runtime, ISO C and POSIX interfaces, native syscall adaptation, timezone runtime and conformance |
 | [Frenit](https://github.com/Waizusora/Frenit) | Free Init implementation, CLI, service-management foundation; native Wicofe PID 1 integration remains unverified |
 | [Mysh](https://github.com/Waizusora/Mysh) | Independent command-line shell; Wicofe shell integration is a planned target. Package management belongs to WPM |
 | [Wicofe-Services](https://github.com/Waizusora/Wicofe-Services) | Individual system daemons, IPC, privilege model, service lifecycle |
@@ -62,6 +62,8 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 - [Wicofe project documentation](https://github.com/Waizusora/Wicofe/blob/main/docs/INDEX.md) — whole-system architecture, roadmap, repository map, and project decisions.
 - [Frenit README](https://github.com/Waizusora/Frenit/blob/main/README.md) — canonical project identity, executable name, CLI convention, and current implementation status.
 - [Frenit integration contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — proposed cross-repository integration boundary.
+- [Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — proposed WFH, Wlibc, POSIX and timezone architecture.
+- [Wlibc documentation index](https://github.com/Waizusora/Wicofe-Libc/blob/main/docs/INDEX.md) — C runtime architecture, porting and conformance plan.
 - [Wicofe-Docs central guide index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md) — user, administrator, developer, contributor, and troubleshooting guides.
 - [System delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned CLI install/update experience and Delivery Release policy direction; not normative implementation evidence.
 
@@ -70,31 +72,9 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 Every linked `docs/INDEX.md` is scoped to its repository. The root Wicofe repository remains the only place for the whole-system architecture overview; component repositories must not copy that overview as their own technical documentation.
 
 - [Kernel](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/INDEX.md) · [ABI](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/INDEX.md) · [Drivers](https://github.com/Waizusora/Wicofe-Drivers/blob/main/docs/INDEX.md) · [Storage](https://github.com/Waizusora/Wicofe-Storage/blob/main/docs/INDEX.md) · [ONWFS](https://github.com/Waizusora/ONWFS/blob/main/docs/INDEX.md)
-- [Lib](https://github.com/Waizusora/Wicofe-Lib/blob/main/docs/INDEX.md) · [Libc](https://github.com/Waizusora/Wicofe-Libc/blob/main/docs/INDEX.md) · [Services](https://github.com/Waizusora/Wicofe-Services/blob/main/docs/INDEX.md) · [Network](https://github.com/Waizusora/Wicofe-Network/blob/main/docs/INDEX.md) · [Input](https://github.com/Waizusora/Wicofe-Input/blob/main/docs/INDEX.md)
-- [Graphics](https://github.com/Waizusora/Wicofe-Graphics/blob/main/docs/INDEX.md) · [Audio](https://github.com/Waizusora/Wicofe-Audio/blob/main/docs/INDEX.md) · [WDE](https://github.com/Waizusora/WDE/blob/main/docs/INDEX.md) · [Frenit](https://github.com/Waizusora/Frenit/blob/main/README.md) · [Mysh](https://github.com/Waizusora/Mysh/blob/main/docs/INDEX.md) · [WPM](https://github.com/Waizusora/WPM/blob/main/docs/INDEX.md)
-- [Build](https://github.com/Waizusora/Wicofe-Build/blob/main/docs/INDEX.md) · [Image](https://github.com/Waizusora/Wicofe-Image/blob/main/docs/INDEX.md) · [Installer](https://github.com/Waizusora/Wicofe-Installer/blob/main/docs/INDEX.md) · [Update](https://github.com/Waizusora/Wicofe-Update/blob/main/docs/INDEX.md) · [Recovery](https://github.com/Waizusora/Wicofe-Recovery/blob/main/docs/INDEX.md)
-- [SDK](https://github.com/Waizusora/Wicofe-SDK/blob/main/docs/INDEX.md) · [Ports](https://github.com/Waizusora/Wicofe-Ports/blob/main/docs/INDEX.md) · [Tools](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/INDEX.md) · [Specs](https://github.com/Waizusora/Wicofe-Specs/blob/main/docs/INDEX.md) · [Tests](https://github.com/Waizusora/Wicofe-Tests/blob/main/docs/INDEX.md) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/docs/INDEX.md)
-
-## Documentation synchronization rules
-
-1. Component-specific implementation details live in the owning repository.
-2. Cross-component requirements live in Wicofe-Specs and link to component authorities.
-3. Wicofe-Docs explains system use and development; it links to normative component documents rather than copying them.
-4. Each component README describes only that component's purpose, boundaries, status, build/test entry points, and documentation index.
-5. When a canonical document changes, update this map or the central index only if navigation, ownership, status, or cross-repository links change.
-6. Planned functionality must be labeled as planned or proposed. Do not imply implementation or test success without evidence.
-
+- [Lib](https://github.com/Waizusora/Wicofe-Lib/blob/main/docs/INDEX.md) · [Wlibc](https://github.com/Waizusora/Wicofe-Libc/blob/main/docs/INDEX.md) · [Services](https://github.com/Waizusora/Wicofe-Services/blob/main/docs/INDEX.md) · [Network](https://github.com/Waizusora/Wicofe-Network/blob/main/docs/INDEX.md) · [Input](https://github.com/Waizusora/Wicofe-Input/blob/main/docs/INDEX.md)
+- [Graphics](https://github.com/Waizusora/Wicofe-Graphics/blob/main/docs/INDEX.md) · [Audio](https://github.com/Waizusora/Wicofe-Audio/blob/main/docs/INDEX.md) · [WDE](https://github.com/Waizusora/WDE/blob/main/docs/INDEX.md) · [Frenit](https://github.com/Waizusora/Frenit)
 
 ## Frenit cross-repository integration
 
-The canonical init-system project is [Frenit — Free Init](https://github.com/Waizusora/Frenit). Native PID 1 integration remains unverified; these documents define ownership and staged gates rather than claiming a working runtime.
-
-- [Project naming decision](https://github.com/Waizusora/Wicofe/blob/main/decisions/0002-frenit-init-system.md) — canonical identity and withdrawal of earlier init proposals.
-- [Cross-component contract](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — boot, ABI, process and deployment gates.
-- [Kernel integration boundary](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/FRENIT_INTEGRATION.md) — kernel-owned mechanisms and PID 1 handoff prerequisites.
-- [ABI requirements](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/FRENIT_ABI_REQUIREMENTS_0.1.md) — capability domains without speculative syscall assignments.
-- [Service integration](https://github.com/Waizusora/Wicofe-Services/blob/main/docs/FRENIT_SERVICE_INTEGRATION_0.1.md) — Frenit lifecycle policy versus daemon ownership.
-- [Build integration](https://github.com/Waizusora/Wicofe-Build/blob/main/docs/FRENIT_BUILD_INTEGRATION_0.1.md) — target artifact provenance and ABI metadata.
-- [Image integration](https://github.com/Waizusora/Wicofe-Image/blob/main/docs/FRENIT_IMAGE_INTEGRATION_0.1.md) — manifest and root-filesystem requirements.
-- [First-boot integration](https://github.com/Waizusora/Wicofe-Installer/blob/main/docs/FRENIT_FIRST_BOOT_INTEGRATION_0.1.md) — deployment and boot-readiness gates.
-- [Conformance matrix](https://github.com/Waizusora/Wicofe-Tests/blob/main/FRENIT_CONFORMANCE_MATRIX_0.1.md) — planned native integration evidence.
+Frenit owns init policy, service definitions, dependency ordering, supervision, restart policy and shutdown orchestration. The kernel owns process, exec, wait/reap, signal, descriptor, IPC, clock and power primitives. Wicofe-ABI owns their syscall definitions and error semantics. Wicofe-Specs coordinates boot and image integration. Wicofe-Services owns daemon implementations. Wicofe-Image and Wicofe-Installer package and deploy Frenit with the system. Wicofe-Tests validates the integration. Native PID 1 handoff remains unverified until the ABI, kernel, boot, image and runtime gates pass.
