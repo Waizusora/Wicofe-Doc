@@ -2,6 +2,10 @@
 
 **Status:** Project policy summary. The authoritative dependency rules are maintained in Wicofe-ThirdParty.
 
+## Project-wide principles
+
+Wicofe is a Unix-like, POSIX-compatible, non-GNU alternative. Native software must use Wicofe interfaces and must not require Linux libc, GNU libc, musl-for-Linux, Linux binary compatibility, or GNU compatibility layers. See the canonical [Wicofe Project Principles](PROJECT_PRINCIPLES.md).
+
 ## Original project material
 
 The project-wide default for original Wicofe source code is MPL-2.0 unless a repository explicitly documents a different license. Each repository must carry the applicable license text and preserve required notices. Do not infer a license solely from a project-wide statement.
@@ -22,14 +26,18 @@ The project-wide default for original Wicofe source code is MPL-2.0 unless a rep
 
 The canonical [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md) applies to all Wicofe repositories, direct/transitive dependencies, build tools and shipped assets:
 
-- **GPL:** prohibited.
-- **AGPL:** prohibited.
-- **LGPL:** conditionally allowed after exact-version technical/license review and scoped approval. Prefer in-house implementation when reasonably feasible.
-- **Other licenses:** allowed when exact terms, compatibility and obligations are reviewed and met. Common examples include MIT, BSD, ISC, Apache-2.0, MPL-2.0 and Zlib.
+- **GPL and AGPL:** avoided and prohibited for normal project integration.
+- **Permissive licenses:** preferred when suitable, including MIT, BSD, ISC, Apache-2.0 and Zlib.
+- **LGPL:** considered only when no technically and legally suitable permissive alternative exists, after exact-version review and explicit project-owner approval.
+- **Other licenses:** require review of exact terms, compatibility and obligations; copyleft licenses other than GPL/AGPL require explicit project-owner approval where applicable.
 - **Other copyleft, custom, proprietary or ambiguous terms:** require careful compatibility review and explicit project-owner approval.
 - **Unknown, ambiguous or incomplete license evidence:** blocked pending review.
 
 The policy applies to direct and transitive dependencies, build tools, firmware, fonts, codecs, generated code and other shipped assets. A successful build does not constitute license approval.
+
+## Reuse and original implementation
+
+Wicofe encourages original implementations where practical, but does not require difficult components to be recreated from scratch. Reuse or fork an upstream project when that is the safer and more maintainable choice, provided its license and architecture meet Wicofe policy and it is adapted to native Wicofe interfaces.
 
 ## Third-party material
 
