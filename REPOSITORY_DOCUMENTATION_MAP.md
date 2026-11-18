@@ -34,7 +34,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 | Repository | Documentation responsibility |
 |---|---|
 | [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) | Shared Rust userspace libraries and safe ABI wrappers |
-| [Wlibc](https://github.com/Waizusora/WLibc) | C standard library/runtime, ISO C and POSIX interfaces, native syscall adaptation, timezone runtime and conformance |
+| [Wlibc](https://github.com/Waizusora/WLibc) | C standard library/runtime, ISO C17 and POSIX.1-2024 interfaces, native syscall adaptation, timezone runtime and conformance; [pinned musl baseline](https://github.com/Waizusora/WLibc/blob/main/docs/UPSTREAM_BASELINE_MUSL_1.2.6.md) |
 | [Frenit](https://github.com/Waizusora/Frenit) | Free Init implementation, CLI, service-management foundation; native Wicofe PID 1 integration remains unverified |
 | [Mysh](https://github.com/Waizusora/Mysh) | Independent command-line shell; Wicofe shell integration is a planned target. Package management belongs to WPM |
 | [Wicofe-Services](https://github.com/Waizusora/Wicofe-Services) | Individual system daemons, IPC, privilege model, service lifecycle |
