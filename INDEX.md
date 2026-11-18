@@ -15,6 +15,7 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 - [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.
 - [Frenit — Free Init](https://github.com/Waizusora/Frenit) — canonical init-system implementation, executable `frenit`, CLI and service-management foundation.
 - [Frenit integration contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — proposed kernel/ABI/boot/image integration gates; native PID 1 is not yet verified.
+- [Frenit integration documentation map](REPOSITORY_DOCUMENTATION_MAP.md#frenit-cross-repository-integration) — linked contracts and implementation responsibilities across all affected repositories.
 - [Cross-repository consistency audit — 2026-11-16](AUDIT_REPORT_2026-11-16.md) — historical snapshot from before the Frenit naming decision; init-system references are superseded by the current Frenit ADR and integration contract.
 - [Repository change audit — 2026-11-16](REPOSITORY_CHANGE_AUDIT_2026-11-16.md) — historical commit snapshot from before the Frenit naming decision; use the current repository map and Frenit contract for active ownership.
 - [System delivery and installation direction 0.1](SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned `wicofe-install` CLI workflow, `wpm sync` / `wpm upgrade` update experience, flexible Delivery Release cadence and urgent security deliveries; not implementation evidence.
