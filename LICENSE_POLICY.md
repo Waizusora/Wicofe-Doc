@@ -6,6 +6,18 @@
 
 The project-wide default for original Wicofe source code is MPL-2.0 unless a repository explicitly documents a different license. Each repository must carry the applicable license text and preserve required notices. Do not infer a license solely from a project-wide statement.
 
+## Approved repository-specific license exception
+
+- [Wlibc](https://github.com/Waizusora/WLibc) licenses original Wlibc-authored
+  code and documentation under MIT. This is an explicit, project-owner-approved
+  exception to the project-wide MPL-2.0 default.
+- Imported musl source retains the upstream MIT license and copyright notices.
+  File-level and bundled third-party components retain their own applicable
+  notices and terms. The Wlibc repository-level MIT license does not relicense
+  third-party material.
+- The exact upstream revision and component-level provenance audit are required
+  before importing musl source.
+
 ## Binding dependency license rules
 
 The canonical [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md) applies to all Wicofe repositories, direct/transitive dependencies, build tools and shipped assets:
