@@ -14,6 +14,10 @@ Central user, developer, administrator, and contributor documentation for Wicofe
 
 Normative interface and format requirements belong in Wicofe-Specs or the owning component's specification. This repository explains how to use, develop, configure, and operate the system. Component-specific implementation details should link to the authoritative component documentation rather than duplicate it.
 
+## Canonical init-system reference
+
+[Frenit (Free Init)](https://github.com/Waizusora/Frenit) is the canonical Wicofe init-system project. Its CLI and implementation documentation live in Frenit; the proposed kernel/ABI/boot integration gates are maintained in [WIC-SPEC-BOOT-FRENIT-001](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md). Native PID 1 integration is not yet verified and must not be described as available.
+
 ## Documentation standards
 
 - Clearly label planned, experimental, implemented, and stable functionality.
