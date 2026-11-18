@@ -4,7 +4,7 @@
 
 ## Project-wide principles
 
-Wicofe is a Unix-like, POSIX-compatible, non-GNU alternative. Native software must use Wicofe interfaces and must not require Linux libc, GNU libc, musl-for-Linux, Linux binary compatibility, or GNU compatibility layers. See the canonical [Wicofe Project Principles](PROJECT_PRINCIPLES.md).
+Wicofe is an independent Unix-like, POSIX-compatible operating system and software ecosystem, designed as an alternative to established and widely adopted software ecosystems and technologies, including GNU. Native software must use Wicofe interfaces and must not require Linux libc, GNU libc, musl-for-Linux, Linux binary compatibility, or GNU compatibility layers. See the canonical [Wicofe Project Principles](PROJECT_PRINCIPLES.md).
 
 ## Original project material
 
