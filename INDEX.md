@@ -13,7 +13,8 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 ## Repository documentation ownership
 
 - [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.
-- [Osynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) — canonical init architecture, Core Init boundary, optional modules and service lifecycle.
+- [Frenit — Free Init](https://github.com/Waizusora/Frenit) — canonical init-system implementation, executable `frenit`, CLI and service-management foundation.
+- [Frenit integration contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — proposed kernel/ABI/boot/image integration gates; native PID 1 is not yet verified.
 - [Cross-repository consistency audit — 2026-11-16](AUDIT_REPORT_2026-11-16.md) — initial review of all 29 Wicofe repository READMEs/indexes, ownership boundaries, lifecycle status, licensing policy alignment, and outstanding actions.
 - [Repository change audit — 2026-11-16](REPOSITORY_CHANGE_AUDIT_2026-11-16.md) — latest default-branch commit snapshot, cross-repository change summary, and manifest coverage.
 - [System delivery and installation direction 0.1](SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned `wicofe-install` CLI workflow, `wpm sync` / `wpm upgrade` update experience, flexible Delivery Release cadence and urgent security deliveries; not implementation evidence.
