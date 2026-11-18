@@ -13,6 +13,7 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 ## Repository documentation ownership
 
 - [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.
+- [Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — proposed traditional Unix hierarchy, Wlibc POSIX runtime, and IANA timezone architecture.
 - [Frenit — Free Init](https://github.com/Waizusora/Frenit) — canonical init-system implementation, executable `frenit`, CLI and service-management foundation.
 - [Frenit integration contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — proposed kernel/ABI/boot/image integration gates; native PID 1 is not yet verified.
 - [Frenit integration documentation map](REPOSITORY_DOCUMENTATION_MAP.md#frenit-cross-repository-integration) — linked contracts and implementation responsibilities across all affected repositories.
