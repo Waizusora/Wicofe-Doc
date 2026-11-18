@@ -29,7 +29,7 @@ Where an established utility or library is reused, adapt it to Wicofe's native i
 
 ## 4. Licensing policy
 
-Wicofe prefers permissive licenses for original code and third-party dependencies.
+Wicofe prefers permissive licenses for new original code and third-party dependencies. This preference does not automatically change or relicense existing repositories; each repository's current LICENSE file and approved third-party terms remain authoritative unless changed through a separate, rights-aware decision.
 
 - Prefer MIT, BSD, ISC, Apache-2.0, Zlib, and other suitable permissive licenses, subject to their exact terms.
 - Avoid GPL and AGPL software and dependencies; they are not acceptable for normal project integration.
