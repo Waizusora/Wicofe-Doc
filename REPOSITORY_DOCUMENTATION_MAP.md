@@ -34,7 +34,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 | Repository | Documentation responsibility |
 |---|---|
 | [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) | Shared Rust userspace libraries and safe ABI wrappers |
-| [Wlibc](https://github.com/Waizusora/Wicofe-Libc) | C standard library/runtime, ISO C and POSIX interfaces, native syscall adaptation, timezone runtime and conformance |
+| [Wlibc](https://github.com/Waizusora/WLibc) | C standard library/runtime, ISO C and POSIX interfaces, native syscall adaptation, timezone runtime and conformance |
 | [Frenit](https://github.com/Waizusora/Frenit) | Free Init implementation, CLI, service-management foundation; native Wicofe PID 1 integration remains unverified |
 | [Mysh](https://github.com/Waizusora/Mysh) | Independent command-line shell; Wicofe shell integration is a planned target. Package management belongs to WPM |
 | [Wicofe-Services](https://github.com/Waizusora/Wicofe-Services) | Individual system daemons, IPC, privilege model, service lifecycle |
@@ -63,7 +63,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 - [Frenit README](https://github.com/Waizusora/Frenit/blob/main/README.md) — canonical project identity, executable name, CLI convention, and current implementation status.
 - [Frenit integration contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — proposed cross-repository integration boundary.
 - [Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — proposed WFH, Wlibc, POSIX and timezone architecture.
-- [Wlibc documentation index](https://github.com/Waizusora/Wicofe-Libc/blob/main/docs/INDEX.md) — C runtime architecture, porting and conformance plan.
+- [Wlibc documentation index](https://github.com/Waizusora/WLibc/blob/main/docs/INDEX.md) — C runtime architecture, porting and conformance plan.
 - [Wicofe-Docs central guide index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md) — user, administrator, developer, contributor, and troubleshooting guides.
 - [System delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned CLI install/update experience and Delivery Release policy direction; not normative implementation evidence.
 
@@ -72,7 +72,7 @@ The binding [Wicofe Dependency License Policy 0.2](https://github.com/Waizusora/
 Every linked `docs/INDEX.md` is scoped to its repository. The root Wicofe repository remains the only place for the whole-system architecture overview; component repositories must not copy that overview as their own technical documentation.
 
 - [Kernel](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/INDEX.md) · [ABI](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/INDEX.md) · [Drivers](https://github.com/Waizusora/Wicofe-Drivers/blob/main/docs/INDEX.md) · [Storage](https://github.com/Waizusora/Wicofe-Storage/blob/main/docs/INDEX.md) · [ONWFS](https://github.com/Waizusora/ONWFS/blob/main/docs/INDEX.md)
-- [Lib](https://github.com/Waizusora/Wicofe-Lib/blob/main/docs/INDEX.md) · [Wlibc](https://github.com/Waizusora/Wicofe-Libc/blob/main/docs/INDEX.md) · [Services](https://github.com/Waizusora/Wicofe-Services/blob/main/docs/INDEX.md) · [Network](https://github.com/Waizusora/Wicofe-Network/blob/main/docs/INDEX.md) · [Input](https://github.com/Waizusora/Wicofe-Input/blob/main/docs/INDEX.md)
+- [Lib](https://github.com/Waizusora/Wicofe-Lib/blob/main/docs/INDEX.md) · [Wlibc](https://github.com/Waizusora/WLibc/blob/main/docs/INDEX.md) · [Services](https://github.com/Waizusora/Wicofe-Services/blob/main/docs/INDEX.md) · [Network](https://github.com/Waizusora/Wicofe-Network/blob/main/docs/INDEX.md) · [Input](https://github.com/Waizusora/Wicofe-Input/blob/main/docs/INDEX.md)
 - [Graphics](https://github.com/Waizusora/Wicofe-Graphics/blob/main/docs/INDEX.md) · [Audio](https://github.com/Waizusora/Wicofe-Audio/blob/main/docs/INDEX.md) · [WDE](https://github.com/Waizusora/WDE/blob/main/docs/INDEX.md) · [Frenit](https://github.com/Waizusora/Frenit)
 
 ## Frenit cross-repository integration
