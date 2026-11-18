@@ -5,9 +5,9 @@
 
 ## 1. Project identity
 
-Wicofe is a Unix-like, POSIX-compatible operating system and software ecosystem. It is developed as an independent, non-GNU alternative.
+Wicofe is an independent Unix-like, POSIX-compatible operating system and software ecosystem, designed as an alternative to established and widely adopted software ecosystems and technologies, including GNU.
 
-POSIX compatibility is a core design objective. It does not imply GNU compatibility, Linux binary compatibility, or implementation compatibility with any particular Linux distribution. The project must distinguish its POSIX conformance goals from features that are merely planned or implemented.
+Wicofe aims to provide independent implementations and a coherent native platform while remaining interoperable through established standards such as POSIX. This direction is not limited to replacing GNU software, and it does not require recreating every popular project from scratch. POSIX compatibility is a core design objective; it does not imply GNU compatibility, Linux binary compatibility, or implementation compatibility with any particular Linux distribution. The project must distinguish its POSIX conformance goals from features that are merely planned or implemented.
 
 ## 2. Native system architecture
 
@@ -21,9 +21,11 @@ Native Wicofe software must target Wicofe interfaces and execution environments.
 
 A component may use a native Wicofe runtime written specifically for its language. It must not silently inherit Linux host assumptions through its target triple, standard library, linker, or transitive dependencies.
 
-## 3. POSIX and non-GNU direction
+## 3. POSIX compatibility and ecosystem independence
 
-Wicofe targets a coherent Unix-like userspace with documented POSIX interfaces and behavior. GNU-specific extensions, GNU command behavior, GNU toolchain assumptions, and GNU compatibility are not project goals.
+Wicofe targets a coherent Unix-like userspace with documented POSIX interfaces and behavior. It is intended as an independent alternative to established and widely adopted software ecosystems and technologies, including GNU.
+
+The project is not limited to replacing GNU components. It may develop independent alternatives to popular tools, libraries, runtimes, services, and development technologies across the wider software ecosystem. GNU-specific extensions, GNU command behavior, GNU toolchain assumptions, and GNU compatibility are not project goals.
 
 Where an established utility or library is reused, adapt it to Wicofe's native interfaces and the selected POSIX requirements. Do not claim complete POSIX conformance without a declared profile and reproducible conformance evidence.
 
