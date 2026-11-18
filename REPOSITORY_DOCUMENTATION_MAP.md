@@ -83,3 +83,18 @@ Every linked `docs/INDEX.md` is scoped to its repository. The root Wicofe reposi
 4. Each component README describes only that component's purpose, boundaries, status, build/test entry points, and documentation index.
 5. When a canonical document changes, update this map or the central index only if navigation, ownership, status, or cross-repository links change.
 6. Planned functionality must be labeled as planned or proposed. Do not imply implementation or test success without evidence.
+
+
+## Frenit cross-repository integration
+
+The canonical init-system project is [Frenit — Free Init](https://github.com/Waizusora/Frenit). Native PID 1 integration remains unverified; these documents define ownership and staged gates rather than claiming a working runtime.
+
+- [Project naming decision](https://github.com/Waizusora/Wicofe/blob/main/decisions/0002-frenit-init-system.md) — canonical identity and withdrawal of earlier init proposals.
+- [Cross-component contract](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — boot, ABI, process and deployment gates.
+- [Kernel integration boundary](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/FRENIT_INTEGRATION.md) — kernel-owned mechanisms and PID 1 handoff prerequisites.
+- [ABI requirements](https://github.com/Waizusora/Wicofe-ABI/blob/main/docs/FRENIT_ABI_REQUIREMENTS_0.1.md) — capability domains without speculative syscall assignments.
+- [Service integration](https://github.com/Waizusora/Wicofe-Services/blob/main/docs/FRENIT_SERVICE_INTEGRATION_0.1.md) — Frenit lifecycle policy versus daemon ownership.
+- [Build integration](https://github.com/Waizusora/Wicofe-Build/blob/main/docs/FRENIT_BUILD_INTEGRATION_0.1.md) — target artifact provenance and ABI metadata.
+- [Image integration](https://github.com/Waizusora/Wicofe-Image/blob/main/docs/FRENIT_IMAGE_INTEGRATION_0.1.md) — manifest and root-filesystem requirements.
+- [First-boot integration](https://github.com/Waizusora/Wicofe-Installer/blob/main/docs/FRENIT_FIRST_BOOT_INTEGRATION_0.1.md) — deployment and boot-readiness gates.
+- [Conformance matrix](https://github.com/Waizusora/Wicofe-Tests/blob/main/FRENIT_CONFORMANCE_MATRIX_0.1.md) — planned native integration evidence.
