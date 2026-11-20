@@ -1,6 +1,6 @@
 # Documentation Index
 
-This repository contains explanatory documentation for Wicofe OS. Normative contracts remain in the owning component repositories or Wicofe-Specs.
+This repository contains explanatory documentation for Wicofe OS. Normative contracts remain in the owning component repositories or Wicofe-Spec.
 
 ## Documentation areas
 
@@ -13,9 +13,9 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 ## Repository documentation ownership
 
 - [Repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md) — component-by-component ownership, canonical documentation indexes, and synchronization rules.
-- [Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — proposed traditional Unix hierarchy, Wlibc POSIX runtime, and IANA timezone architecture.
+- [Unix userspace foundation 0.1](https://github.com/Waizusora/Wicofe-Spec/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — proposed traditional Unix hierarchy, Wlibc POSIX runtime, and IANA timezone architecture.
 - [Frenit — Free Init](https://github.com/Waizusora/Frenit) — canonical init-system implementation, executable `frenit`, CLI and service-management foundation.
-- [Frenit integration contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — proposed kernel/ABI/boot/image integration gates; native PID 1 is not yet verified.
+- [Frenit integration contract 0.1](https://github.com/Waizusora/Wicofe-Spec/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) — proposed kernel/ABI/boot/image integration gates; native PID 1 is not yet verified.
 - [Frenit integration documentation map](REPOSITORY_DOCUMENTATION_MAP.md#frenit-cross-repository-integration) — linked contracts and implementation responsibilities across all affected repositories.
 - [Cross-repository consistency audit — 2026-11-16](AUDIT_REPORT_2026-11-16.md) — historical snapshot from before the Frenit naming decision; init-system references are superseded by the current Frenit ADR and integration contract.
 - [Repository change audit — 2026-11-16](REPOSITORY_CHANGE_AUDIT_2026-11-16.md) — historical commit snapshot from before the Frenit naming decision; use the current repository map and Frenit contract for active ownership.
@@ -28,7 +28,7 @@ This repository contains explanatory documentation for Wicofe OS. Normative cont
 - [Wicofe repository map](https://github.com/Waizusora/Wicofe/blob/main/docs/REPOSITORY_MAP.md)
 - [Wicofe architecture](https://github.com/Waizusora/Wicofe/blob/main/docs/ARCHITECTURE.md)
 - [Wicofe roadmap](https://github.com/Waizusora/Wicofe/blob/main/docs/ROADMAP.md)
-- [Cross-component specifications](https://github.com/Waizusora/Wicofe-Specs)
+- [Cross-component specifications](https://github.com/Waizusora/Wicofe-Spec)
 - [Userspace ABI](https://github.com/Waizusora/Wicofe-ABI)
 - [Kernel implementation and DKM contract](https://github.com/Waizusora/Wicofe-Kernel)
 
