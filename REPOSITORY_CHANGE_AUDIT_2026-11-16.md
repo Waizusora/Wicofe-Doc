@@ -40,7 +40,7 @@ The SHA column records the exact commit observed by the 29-repository audit run 
 | Wicofe-Storage | `b42c7f75ff3c1ef93a7af06e7246792c68b73c4e` | Index storage management design |
 | ONWFS | `ae06ce4178dd8cecb7ec47ea5d0f5715dadb0339` | Clarify ordered-data overwrite limitations |
 | Wicofe-Lib | `cda650b19eef95463bf41596ecfa02e512571e77` | Index Rust userspace library architecture |
-| Wicofe-Libc | `0d7314819ec66ca36bd06ff712250a4cb37c3fc4` | Index C runtime porting architecture |
+| WLibc | `0d7314819ec66ca36bd06ff712250a4cb37c3fc4` | Index C runtime porting architecture |
 | Frenit | `1b983d09963556b928631f78d411dde000af5809` | Format supervisor duplicate-event assertion |
 | Wicofe-Service | `4121d9b0a1090088df0c4243ad4ff7ed249c9181` | Standardize project name as Frenit |
 | Wicofe-Network | `a003e296eba39356d510f38da3077042da3b9f20` | Index userspace networking architecture |
@@ -75,7 +75,7 @@ This is a source-tree discovery snapshot, not a resolved dependency inventory. T
 
 ### Frenit integration
 
-The canonical design authority is [Frenit System Specification 0.1](https://github.com/Waizusora/Frenit/blob/main/docs/README.md). The cross-repository Core Init boundary and boot/service integration are coordinated in [Wicofe-Spec](https://github.com/Waizusora/Wicofe-Spec/tree/main/boot).
+The canonical design authority is [Frenit System Specification 0.1](https://github.com/Waizusora/Frenit/blob/main/README.md). The cross-repository Core Init boundary and boot/service integration are coordinated in [Wicofe-Spec](https://github.com/Waizusora/Wicofe-Spec/tree/main/boot).
 
 The specification explicitly records an accepted design baseline while implementation remains partial/prototype. Native PID 1, complete IPC/CLI and bootable integration must not be inferred from documentation-only commits.
 
@@ -101,7 +101,7 @@ The default-branch diff review confirms these documentation and implementation-b
 - **Whole-system updates:** Wicofe-Update now indexes the draft whole-system update architecture. It explicitly owns OS release orchestration while WPM owns individual package operations. A/B slots, snapshots and in-place updates remain unselected; atomicity and rollback are not claimed.
 - **Package manager:** WPM added its component documentation index. Its README still treats package format, repository protocol and signature policy as design work. WPM and Wicofe-Update boundaries remain separate.
 - **Build/release gate:** Wicofe-Build pinned the corrected Wicofe-Tool auditor workflow/source revision to `cccc4c197687ce8fd629f9b9d8a7d95d4e89cddc`. Wicofe-Tool documents that Kernel and WDE system-package evidence artifacts are not yet reconciled by the cross-repository release gate; final-image SBOM reconciliation and publication gating remain incomplete.
-- **Low-level and userspace architecture indexes:** Wicofe-Driver, Wicofe-Storage, Wicofe-Lib, Wicofe-Libc, Wicofe-Network, Wicofe-Input, Wicofe-Graphic, Wicofe-Audio and Wicofe-SDK added links to their respective draft architecture/porting documents. These are design documentation, not evidence of complete subsystem implementations.
+- **Low-level and userspace architecture indexes:** Wicofe-Driver, Wicofe-Storage, Wicofe-Lib, WLibc, Wicofe-Network, Wicofe-Input, Wicofe-Graphic, Wicofe-Audio and Wicofe-SDK added links to their respective draft architecture/porting documents. These are design documentation, not evidence of complete subsystem implementations.
 - **Ports governance:** Wicofe-Ports clarified that Wicofe-SDK owns toolchain/sysroot distribution, Wicofe-ThirdParty owns canonical provenance/license approvals, and Wicofe-Ports owns recipes/patches/upstream maintenance. It also separates host build/cross-compile evidence from actual target runtime support.
 - **Filesystem durability:** ONWFS clarified that ordered metadata journaling does not make in-place file-data overwrites atomic; power loss can leave partially updated contents. This limitation must be reflected in any future installer, updater and recovery guarantees.
 - **Shell behavior:** Mysh documented concurrent OS-pipe execution for all-external simple pipelines and buffered fallback for mixed/in-process pipelines. A separate package-manager implementation was removed from Mysh; package management belongs to WPM.
