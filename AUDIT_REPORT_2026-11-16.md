@@ -6,7 +6,7 @@
 
 ## 1. Executive summary
 
-The 29-repository documentation inventory is present and the repository ownership model is broadly consistent. All 29 repository README files and their canonical documentation entry points were reviewed. The root Wicofe repository uses `docs/INDEX.md`; Wicofe-Docs uses root `INDEX.md`; the remaining component repositories use `docs/INDEX.md`.
+The 29-repository documentation inventory is present and the repository ownership model is broadly consistent. All 29 repository README files and their canonical documentation entry points were reviewed. The root Wicofe repository uses `docs/INDEX.md`; Wicofe-Doc uses root `INDEX.md`; the remaining component repositories use `docs/INDEX.md`.
 
 Three ownership/status ambiguities were corrected during this audit:
 1. Specification lifecycle is now separate from implementation and verification state.
@@ -34,13 +34,13 @@ No system-wide implementation or CI conformance claim is made.
 - Unknown or incomplete license evidence: blocked pending review.
 - Original Wicofe-authored code targets MPL-2.0.
 
-Policy 0.2 applies to direct and transitive dependencies, build tools and shipped non-code assets. Wicofe-Docs/LICENSE_POLICY.md, the central repository map, Wicofe-ThirdParty README/index/intake architecture, Osynit README, WDE README/licensing documentation and Wicofe-Tools policy links were aligned. The corrected policy does not prove that existing manifests, vendored code, build outputs or release images comply; those inventories still require inspection.
+Policy 0.2 applies to direct and transitive dependencies, build tools and shipped non-code assets. Wicofe-Doc/LICENSE_POLICY.md, the central repository map, Wicofe-ThirdParty README/index/intake architecture, Frenit README, WDE README/licensing documentation and Wicofe-Tool policy links were aligned. The corrected policy does not prove that existing manifests, vendored code, build outputs or release images comply; those inventories still require inspection.
 
 ### AUD-2026-02 — Specification lifecycle previously mixed implementation status
 
 **Severity:** High  
 **Status:** Corrected in this audit  
-**Affected repository:** Wicofe-Specs
+**Affected repository:** Wicofe-Spec
 
 The earlier governance text included **Implemented** among specification lifecycle statuses while also requiring implementation state to be tracked independently. This made a specification's approval state ambiguous.
 
@@ -54,7 +54,7 @@ The earlier governance text included **Implemented** among specification lifecyc
 
 **Severity:** Medium  
 **Status:** Corrected in this audit  
-**Affected repository:** Wicofe-Docs
+**Affected repository:** Wicofe-Doc
 
 The project governance document used the phrase “ONWFS / storage component repository,” which could be read as a shared or interchangeable ownership assignment.
 
@@ -66,11 +66,11 @@ The project governance document used the phrase “ONWFS / storage component rep
 **Status:** Corrected in this audit  
 **Affected repository:** Wicofe project architecture
 
-The project architecture previously listed “Wicofe-Kernel / Wicofe-Drivers” as a combined owner for driver and DKM interfaces.
+The project architecture previously listed “Wicofe-Kernel / Wicofe-Driver” as a combined owner for driver and DKM interfaces.
 
 **Correction committed:**
 - Wicofe-Kernel owns the driver core, DKM loader, and privileged DKM ABI.
-- Wicofe-Drivers owns concrete optional driver implementations and driver-specific packaging.
+- Wicofe-Driver owns concrete optional driver implementations and driver-specific packaging.
 
 ### AUD-2026-05 — Kernel roadmap may lag current implementation evidence
 
@@ -86,7 +86,7 @@ This may be a partially completed milestone rather than a false status. The road
 
 **Severity:** Medium  
 **Status:** Open — adoption work required  
-**Affected repositories:** Wicofe-Specs, Wicofe-Tests, all component repositories
+**Affected repositories:** Wicofe-Spec, Wicofe-Test, all component repositories
 
 The new policy and test matrix define stable requirement IDs and a traceability chain, but the current audit did not assign or verify IDs for every normative requirement in every component specification.
 
@@ -112,7 +112,7 @@ The following boundaries were consistent across the reviewed materials:
 - Wicofe-ABI owns public userspace syscall definitions; Wicofe-Kernel implements them.
 - Wicofe-Kernel owns VFS internals, driver core, and privileged DKM ABI.
 - ONWFS owns its on-disk format; Wicofe-Storage owns system-level storage workflows.
-- Osynit owns PID 1 and service supervision; Wicofe-Services owns individual daemons.
+- Frenit owns PID 1 and service supervision; Wicofe-Service owns individual daemons.
 - WPM owns package transactions; Wicofe-Update owns whole-system update orchestration.
 - Wicofe-Build owns whole-system build orchestration; Wicofe-Image owns image composition.
 - Mysh remains a standalone shell project; Wicofe integration is a planned target and package management belongs to WPM.
@@ -124,7 +124,7 @@ The reviewed documentation consistently labels ONWFS 0.2.x as draft and does not
 1. Apply the approved dependency license policy to every direct/transitive dependency and shipped asset; audit manifests, vendored code, build outputs and release images.
 2. Reconcile Wicofe roadmap milestones with current kernel source and CI evidence.
 3. Assign stable requirement IDs to canonical normative specifications.
-4. Add automated Markdown link checking and repository-map/index consistency checks to Wicofe-Tools or Wicofe-Tests.
+4. Add automated Markdown link checking and repository-map/index consistency checks to Wicofe-Tool or Wicofe-Test.
 5. Build a machine-readable repository/contract ownership manifest only after owners agree on the current boundary model.
 6. Repeat this audit after policy decisions and traceability rollout.
 
@@ -142,12 +142,12 @@ All findings should be interpreted within that scope.
 
 ## 7. Follow-up implementation — repository documentation validator
 
-After the initial audit, Wicofe-Tools received an initial read-only Markdown validator:
+After the initial audit, Wicofe-Tool received an initial read-only Markdown validator:
 
-- [Validator source](https://github.com/Waizusora/Wicofe-Tools/blob/main/scripts/validate_repository_docs.py)
-- [Unit tests](https://github.com/Waizusora/Wicofe-Tools/blob/main/tests/test_validate_repository_docs.py)
-- [Usage and limitations](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/REPOSITORY_DOCUMENTATION_VALIDATOR.md)
-- [GitHub Actions workflow](https://github.com/Waizusora/Wicofe-Tools/blob/main/.github/workflows/repository-docs-validator.yml)
+- [Validator source](https://github.com/Waizusora/Wicofe-Tool/blob/main/scripts/validate_repository_docs.py)
+- [Unit tests](https://github.com/Waizusora/Wicofe-Tool/blob/main/tests/test_validate_repository_docs.py)
+- [Usage and limitations](https://github.com/Waizusora/Wicofe-Tool/blob/main/docs/REPOSITORY_DOCUMENTATION_VALIDATOR.md)
+- [GitHub Actions workflow](https://github.com/Waizusora/Wicofe-Tool/blob/main/.github/workflows/repository-docs-validator.yml)
 
 The initial tool checks local Markdown links and heading fragments, directory index targets, workspace path escapes, and optional forbidden terms. It is read-only and uses only the Python standard library.
 
@@ -164,14 +164,14 @@ The project owner resolved AUD-2026-01 and the policy is now canonical in Wicofe
 - [Third-party intake architecture](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/docs/THIRD_PARTY_INTAKE_ARCHITECTURE_0.1.md)
 - [Central repository documentation map](REPOSITORY_DOCUMENTATION_MAP.md)
 
-Wicofe-Tools also contains a canonical 29-repository checkout list and a read-only local inventory validator:
+Wicofe-Tool also contains a canonical 29-repository checkout list and a read-only local inventory validator:
 
-- [Canonical inventory](https://github.com/Waizusora/Wicofe-Tools/blob/main/config/repository_inventory.txt)
-- [Validator source](https://github.com/Waizusora/Wicofe-Tools/blob/main/scripts/validate_repository_inventory.py)
-- [Unit tests](https://github.com/Waizusora/Wicofe-Tools/blob/main/tests/test_validate_repository_inventory.py)
-- [Usage guide](https://github.com/Waizusora/Wicofe-Tools/blob/main/docs/REPOSITORY_INVENTORY_VALIDATOR.md)
+- [Canonical inventory](https://github.com/Waizusora/Wicofe-Tool/blob/main/config/repository_inventory.txt)
+- [Validator source](https://github.com/Waizusora/Wicofe-Tool/blob/main/scripts/validate_repository_inventory.py)
+- [Unit tests](https://github.com/Waizusora/Wicofe-Tool/blob/main/tests/test_validate_repository_inventory.py)
+- [Usage guide](https://github.com/Waizusora/Wicofe-Tool/blob/main/docs/REPOSITORY_INVENTORY_VALIDATOR.md)
 
-The existing GitHub Actions test workflow now watches all scripts, tests and configuration files. The validator compares local checkout directories only; it does not prove remote GitHub repository existence. GitHub Actions run [43808126021](https://github.com/Waizusora/Wicofe-Tools/actions/runs/43808126021) completed successfully. The `unit-tests` job and `Run validator unit tests` step both report success. This verifies the unit-test suite at commit `c5cd3f1b8965f4fe9658a26b2a2ec3331607c028`; it does not establish full 29-repository inventory or dependency-license compliance.
+The existing GitHub Actions test workflow now watches all scripts, tests and configuration files. The validator compares local checkout directories only; it does not prove remote GitHub repository existence. GitHub Actions run [43808126021](https://github.com/Waizusora/Wicofe-Tool/actions/runs/43808126021) completed successfully. The `unit-tests` job and `Run validator unit tests` step both report success. This verifies the unit-test suite at commit `c5cd3f1b8965f4fe9658a26b2a2ec3331607c028`; it does not establish full 29-repository inventory or dependency-license compliance.
 
 
 ## 9. Project-owner clarification — dependency license policy 0.2
@@ -180,4 +180,4 @@ The project owner clarified that third-party licenses other than GPL and AGPL ar
 
 Current rule: GPL and AGPL are prohibited; LGPL is conditionally allowed after exact review and scoped approval; all other licenses are allowed subject to their actual terms, compatibility and compliance obligations. Other copyleft, custom, proprietary or ambiguous terms require careful review and explicit project-owner approval. In-house implementation remains preferred where reasonably feasible, but the project does not require reinventing components when that would materially worsen security or maintainability.
 
-Policy summaries and repository links were updated in the central docs, ThirdParty, Osynit, WDE and Wicofe-Tools. This is a documentation/policy correction only. The full dependency inventory and compliance audit remain outstanding.
+Policy summaries and repository links were updated in the central docs, ThirdParty, Frenit, WDE and Wicofe-Tool. This is a documentation/policy correction only. The full dependency inventory and compliance audit remain outstanding.
